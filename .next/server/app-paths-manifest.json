@@ -1,4 +1,7 @@
 {
-  "/page": "app/page.js",
+  "/faqs/page": "app/faqs/page.js",
+  "/resource-hub/page": "app/resource-hub/page.js",
+  "/msme-growth-journey/page": "app/msme-growth-journey/page.js",
+  "/success-stories/page": "app/success-stories/page.js",
   "/marketplace/page": "app/marketplace/page.js"
 }

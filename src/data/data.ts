@@ -58,3 +58,30 @@ export const benefitsData = {
     },
   ],
 };
+
+export const faqs = [
+  {
+    category: "Lorem Ipsum",
+    question: "What services do you offer?",
+    answer:
+      "We offer web design, SEO, social media marketing, Google Ads management, and branding services tailored to grow your business.",
+  },
+  {
+    category: "Lorem Ipsum",
+    question: "What services do you offer?",
+    answer:
+      "We offer web design, SEO, social media marketing, Google Ads management, and branding services tailored to grow your business.",
+  },
+  {
+    category: "Lorem Ipsum2",
+    question: "How can I get a quote?",
+    answer:
+      "You can contact us through our website's contact form or email us directly with your project details.",
+  },
+  {
+    category: "Lorem Ipsum3",
+    question: "Do you provide website maintenance services?",
+    answer:
+      "Yes, we offer affordable and reliable website maintenance packages for all types of businesses.",
+  },
+];

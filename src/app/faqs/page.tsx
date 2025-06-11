@@ -4,38 +4,18 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { SecondaryButton } from "@/components/buttons";
 import AnimatedSection from "@/components/AnimatedSection";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { faqs } from "@/data/data";
 
 export default function FAQPage() {
-  const [activeIndex, setActiveIndex] = useState<number>(0); // first FAQ active
   const [activeTab, setActiveTab] = useState("Lorem Ipsum");
   const [searchTerm, setSearchTerm] = useState("");
-
-  const faqs = [
-    {
-      category: "Lorem Ipsum",
-      question: "What services do you offer?",
-      answer:
-        "We offer web design, SEO, social media marketing, Google Ads management, and branding services tailored to grow your business.",
-    },
-    {
-      category: "Lorem Ipsum",
-      question: "What services do you offer?",
-      answer:
-        "We offer web design, SEO, social media marketing, Google Ads management, and branding services tailored to grow your business.",
-    },
-    {
-      category: "Lorem Ipsum2",
-      question: "How can I get a quote?",
-      answer:
-        "You can contact us through our website's contact form or email us directly with your project details.",
-    },
-    {
-      category: "Lorem Ipsum3",
-      question: "Do you provide website maintenance services?",
-      answer:
-        "Yes, we offer affordable and reliable website maintenance packages for all types of businesses.",
-    },
-  ];
+  const [openItem, setOpenItem] = useState<string | null>(null); // <-- For tracking active accordion item
 
   // Filter FAQs based on active tab and search term
   const filteredFaqs = faqs.filter(
@@ -43,10 +23,6 @@ export default function FAQPage() {
       faq.category === activeTab &&
       faq.question.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
-  const toggleFAQ = (index: number) => {
-    setActiveIndex(activeIndex === index ? 0 : index);
-  };
 
   return (
     <>
@@ -100,77 +76,49 @@ export default function FAQPage() {
                 className={`mb-4 md:mb-0 ${
                   activeTab === tab ? "bg-[#0053e2] text-white" : ""
                 }`}
-                onClick={() => {
-                  setActiveTab(tab);
-                  setActiveIndex(0); // reset to first FAQ active
-                }}
+                onClick={() => setActiveTab(tab)}
               />
             ))}
           </div>
 
           {/* FAQ Accordion */}
-          <div className="space-y-4">
+          <div className="space-y-4 min-h-[200px]">
             {filteredFaqs.length === 0 ? (
               <p className="text-center text-gray-500">No FAQs found.</p>
             ) : (
-              filteredFaqs.map((faq, index) => (
-                <div key={index} className="border rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleFAQ(index)}
-                    className={`w-full text-left p-4 flex justify-between items-center focus:outline-none cursor-pointer ${
-                      activeIndex === index ? "bg-[#E6F2FA]" : ""
-                    }`}
-                  >
-                    <span
-                      className={`font-medium ${
-                        activeIndex === index ? "text-[#0053E2]" : ""
-                      }`}
+              <Accordion
+                type="single"
+                collapsible
+                value={openItem ?? ""}
+                onValueChange={(val) => setOpenItem(val)}
+                className="w-full gap-2 flex flex-col"
+              >
+                {filteredFaqs.map((faq, index) => {
+                  const itemValue = `item-${index}`;
+                  const isActive = openItem === itemValue;
+
+                  return (
+                    <AccordionItem
+                      key={index}
+                      value={itemValue}
+                      className="border rounded-lg overflow-hidden bg-white"
                     >
-                      {faq.question}
-                    </span>
-                    <span>
-                      {activeIndex === index ? (
-                        <svg
-                          className="w-4 h-4 text-[#0053E2] dark:text-white"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 14 8"
-                        >
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"
-                          />
-                        </svg>
-                      ) : (
-                        <svg
-                          className="w-4 h-4 text-gray-800 dark:text-white"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 14 8"
-                        >
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"
-                          />
-                        </svg>
-                      )}
-                    </span>
-                  </button>
-                  {activeIndex === index && (
-                    <div className="p-4 border-t">
-                      <p className="text-gray-700">{faq.answer}</p>
-                    </div>
-                  )}
-                </div>
-              ))
+                      <AccordionTrigger
+                        className={`px-4 hover:no-underline transition-colors duration-300 ${
+                          isActive ? "bg-blue-50" : "bg-white"
+                        }`}
+                      >
+                        <span className="font-medium text-[#0053e2]">
+                          {faq.question}
+                        </span>
+                      </AccordionTrigger>
+                      <AccordionContent className="p-4 border-t font-normal text-md">
+                        <p className="text-gray-700">{faq.answer}</p>
+                      </AccordionContent>
+                    </AccordionItem>
+                  );
+                })}
+              </Accordion>
             )}
           </div>
         </div>

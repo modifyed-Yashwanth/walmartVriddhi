@@ -179,16 +179,16 @@ function page() {
           <div>
             <h2 className="text-2xl md:text-4xl mb-2">What Does CBT Offer?</h2>
             <p>
-              Expand your business reach by capturing new markets and widening
-              existing markets. Walmart Vriddhi offers you the opportunity to
-              grow through the supply chains of Flipkart and Walmart and other
-              major domestic companies.
+              Walmart’s marketplace offers a trusted partnership for MSMEs,
+              facilitating business growth and providing opportunities to expand
+              businesses online. Acceptance into Walmart Marketplace is a strong
+              endorsement of quality and trustworthiness which will attract
+              customers.
             </p>
           </div>
           <div className="">
             <CBTOfferSection />
           </div>
-
         </div>
       </AnimatedSection>
       <AnimatedSection>
@@ -212,8 +212,8 @@ function page() {
         </div>
       </AnimatedSection>
       <AnimatedSection>
-      <div className="relative w-full rounded-xl overflow-hidden bg-[#F3F3F3] py-10 px-4 md:px-12 mb-10">
-        <h2 className="text-2xl md:text-4xl mb-2">Incubation Support</h2>
+        <div className="relative w-full rounded-xl overflow-hidden bg-[#F3F3F3] py-10 px-4 md:px-12 mb-10">
+          <h2 className="text-2xl md:text-4xl mb-2">Incubation Support</h2>
 
           <div className="bg-[#A9DDF7] rounded-lg p-4 md:p-10 block md:flex items-center gap-20 space-x-6 mx-auto mt-10 text-center hover:scale-105 duration-500 transition-transform">
             {/* Icon Box */}

@@ -119,28 +119,29 @@ export default function Page() {
                   key={resource.id}
                   className="overflow-hidden shadow-sm lg:flex lg:flex-row items-center gap-10 mb-10 bg-[#f3f3f3] p-6 md:p-10"
                 >
-
                   <div
-                    className={`h-[300px] w-full lg:w-5/12 ${
+                    className={`h-[300px] w-full lg:w-[50%] ${
                       !resource._embedded?.["wp:featuredmedia"]?.[0]
                         ?.source_url && "bg-gray-200"
-                    } flex items-center justify-center text-sm relative overflow-hidden`}
+                    } relative`}
                   >
-                    {resource.featured_media > 0 &&
-                    resource._embedded?.["wp:featuredmedia"]?.[0]
-                      ?.source_url ? (
-                      <Image
-                        src={
-                          resource._embedded["wp:featuredmedia"][0].source_url
-                        }
-                        alt={resource.title.rendered}
-                        className="object-cover"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                      />
-                    ) : (
-                      "Image Placeholder"
-                    )}
+                    <div className="w-full h-full absolute inset-0 overflow-hidden rounded-xl">
+                      {resource.featured_media > 0 &&
+                      resource._embedded?.["wp:featuredmedia"]?.[0]
+                        ?.source_url ? (
+                        <Image
+                          src={
+                            resource._embedded["wp:featuredmedia"][0].source_url
+                          }
+                          alt={resource.title.rendered}
+                          className="absolute inset-0 object-cover object-left"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                      ) : (
+                        "Image Placeholder"
+                      )}
+                    </div>
                   </div>
                   <CardContent className="p-0 lg:p-4 lg:w-7/12">
                     <h3

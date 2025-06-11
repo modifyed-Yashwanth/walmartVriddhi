@@ -9,21 +9,21 @@ const testimonials = [
   {
     image: "/images/Shivani-Agarwal.png",
     quote:
-      "Walmart’s Vriddhi program has been that guiding light for many MSME owners like me. As a wholesale supplier for the company, I had the good fortune of signing up with the program, which was launched late last year, to train and prepare us to participate in the domestic supply chains.",
+      "Walmart Vriddhi program has been that guiding light for many MSME owners like me. As a wholesale supplier for the company, I had the good fortune of signing up with the program, which was launched late last year, to train and prepare us to participate in the domestic supply chains.",
     name: "Shivani Agarwal",
     role: "Founder, Scraft products Pvt. Ltd.",
   },
   {
     image: "/images/Harpreet-Singh.png",
     quote:
-      "Through Vriddhi, I’ve learnt a lot about different aspects of modern business, including digital sales and developing products for consumer markets. As a result, we are expanding our existing portfolio to include consumer goods and targeting online sales as our main growth channel.",
+      "Through Walmart Vriddhi, I’ve learnt a lot about different aspects of modern business, including digital sales and developing products for consumer markets. As a result, we are expanding our existing portfolio to include consumer goods and targeting online sales as our main growth channel.",
     name: "Harpreet Singh",
     role: "Owner, Shalimar Rubber & Plastic Industries, Kundli - Haryana",
   },
   {
     image: "/images/Sagar-Kalra.png",
     quote:
-      "The clarity of purpose and the guidance that we received from Vriddhi at this crucial time benefited our internal operations as well as sales. It helped us set an example for others. We have aligned our systems with Walmart’s, and we can now focus on innovation.”",
+      "The clarity of purpose and the guidance that we received from Walmart Vriddhi at this crucial time benefited our internal operations as well as sales. It helped us set an example for others. We have aligned our systems with Walmart’s, and we can now focus on innovation.”",
     name: "Sagar Kalra",
     role: "Owner, Arch Fab, Panipat - Haryana",
   },

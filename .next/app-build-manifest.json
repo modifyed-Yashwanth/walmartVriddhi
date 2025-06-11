@@ -11,11 +11,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/page": [
+    "/faqs/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/app/faqs/layout.js"
+    ],
+    "/faqs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/faqs/page.js"
+    ],
+    "/resource-hub/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/resource-hub/layout.js"
+    ],
+    "/resource-hub/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/resource-hub/page.js"
     ],
     "/marketplace/layout": [
       "static/chunks/webpack.js",
@@ -27,6 +41,26 @@
       "static/chunks/main-app.js",
       "static/css/app/marketplace/page.css",
       "static/chunks/app/marketplace/page.js"
+    ],
+    "/success-stories/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/success-stories/layout.js"
+    ],
+    "/success-stories/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/success-stories/page.js"
+    ],
+    "/msme-growth-journey/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/msme-growth-journey/layout.js"
+    ],
+    "/msme-growth-journey/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/msme-growth-journey/page.js"
     ]
   }
 }
