@@ -1,20 +1,3 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/marketplace/page": "app/marketplace/page.js",
-  "/msme-growth-journey/page": "app/msme-growth-journey/page.js",
-  "/contact-us/page": "app/contact-us/page.js",
-  "/about-us/page": "app/about-us/page.js",
-  "/newsroom/[slug]/page": "app/newsroom/[slug]/page.js",
-  "/faqs/page": "app/faqs/page.js",
-  "/newsroom/page": "app/newsroom/page.js",
-  "/search/page": "app/search/page.js",
-  "/privacy-policy/page": "app/privacy-policy/page.js",
-  "/terms-of-use/page": "app/terms-of-use/page.js",
-  "/resource-hub/page": "app/resource-hub/page.js",
-  "/success-stories/page": "app/success-stories/page.js",
-  "/success-stories/[slug]/page": "app/success-stories/[slug]/page.js",
-  "/walmart-vriddhi-msme-summit-2025/page": "app/walmart-vriddhi-msme-summit-2025/page.js",
-  "/walmart-vriddhi-msme-summit-2024/page": "app/walmart-vriddhi-msme-summit-2024/page.js"
+  "/page": "app/page.js"
 }
