@@ -65,29 +65,43 @@ const CourseSection = () => {
   const courses = [
     {
       id: 1,
-      title: "Introduction to Exports & Cross Border Trade",
+      title: "Introduction to Customers & Cross Border Trade",
       image: "/images/Financial & Foreign Exchange management (1).jpg",
     },
     {
       id: 2,
-      title: "Understanding Compliance & Legal Requirements",
+      title: "Legal Requirements and Compliance Issues",
       image: "/images/Legal-requirements-compliance-issues.jpg",
     },
     {
       id: 3,
       title: "Business Ethics & Culture",
-      image: "/images/Foreign-Trade-Policy-other-promotional-schemes.jpg",
+      image: "/images/Business Ethics and Culture.jpg",
     },
     {
       id: 4,
-      title:
-        "Walmart Marketplace Business Growth Levers\u00a0- Walmart Fulfillment Services & Walmart Connect",
+      title: "Walmart Marketplace Business Growth Levers",
       image: "/images/Introduction to custom and cross borer state.jpg",
     },
     {
       id: 5,
       title: "Walmart Marketplace Onboarding & Seller Centre",
-      image: "/images/Business Ethics and Culture.jpg",
+      image: "/images/Foreign-Trade-Policy-other-promotional-schemes.jpg",
+    },
+    {
+      id: 6,
+      title: "FTP & Other Promotional Schemes",
+      image: "/images/FTP & Other Promotional Schemes.jpg",
+    },
+    {
+      id: 7,
+      title: "Packaging Logistics & Distribution",
+      image: "/images/Packaging Logistics & Distribution.jpg",
+    },
+    {
+      id: 7,
+      title: "FInancial & Forex Management",
+      image: "/images/Financial & Forex Management.jpg",
     },
   ];
 

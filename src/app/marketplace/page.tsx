@@ -88,14 +88,11 @@ function page() {
                       showcase products on Walmart&apos;s website, focusing on
                       popular categories such as home and kitchen, beauty,
                       jewellery, apparel, leather accessories, and other
-                      emerging segments.
-                    </p>
-                    <p className="text-sm md:text-md">
-                      For eligible businesses looking to expand, the Marketplace
-                      offers Cross-border Trade (CBT) Enablement, providing
-                      tailored support to help understand compliance,
-                      documentation, logistics, and marketing for the U.S.
-                      market.
+                      emerging segments. <br /> For eligible businesses looking
+                      to expand, the Marketplace offers Cross-border Trade (CBT)
+                      Enablement, providing tailored support to help understand
+                      compliance, documentation, logistics, and marketing for
+                      the U.S. market.
                     </p>
                   </div>
                 </Card>

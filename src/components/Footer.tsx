@@ -153,6 +153,12 @@ const Footer = () => {
             >
               Terms of Service
             </a>
+            <a
+              href="/disclaimer"
+              className="hover:text-[#0053e2] text-[12px] md:text-[16px]"
+            >
+              Disclaimer
+            </a>
           </div>
           <div className="flex gap-4 mt-2 md:mt-0 text-xl">
             <Link

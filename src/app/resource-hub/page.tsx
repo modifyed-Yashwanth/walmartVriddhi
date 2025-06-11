@@ -120,28 +120,27 @@ export default function Page() {
                   className="overflow-hidden shadow-sm lg:flex lg:flex-row items-center gap-10 mb-10 bg-[#f3f3f3] p-6 md:p-10"
                 >
                   <div
-                    className={`h-[300px] w-full lg:w-[50%] ${
+                    className={`w-full lg:w-5/12 ${
                       !resource._embedded?.["wp:featuredmedia"]?.[0]
-                        ?.source_url && "bg-gray-200"
-                    } relative`}
+                        ?.source_url && "bg-gray-200 h-[250px]"
+                    } relative flex items-center justify-center text-sm rounded-xl overflow-hidden`}
                   >
-                    <div className="w-full h-full absolute inset-0 overflow-hidden rounded-xl">
-                      {resource.featured_media > 0 &&
-                      resource._embedded?.["wp:featuredmedia"]?.[0]
-                        ?.source_url ? (
-                        <Image
-                          src={
-                            resource._embedded["wp:featuredmedia"][0].source_url
-                          }
-                          alt={resource.title.rendered}
-                          className="absolute inset-0 object-cover object-left"
-                          fill
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                        />
-                      ) : (
-                        "Image Placeholder"
-                      )}
-                    </div>
+                    {resource.featured_media > 0 &&
+                    resource._embedded?.["wp:featuredmedia"]?.[0]
+                      ?.source_url ? (
+                      <Image
+                        src={
+                          resource._embedded["wp:featuredmedia"][0].source_url
+                        }
+                        alt={resource.title.rendered}
+                        className="object-contain rounded-xlh-full w-full"
+                        height={500}
+                        width={500}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    ) : (
+                      "Image Placeholder"
+                    )}
                   </div>
                   <CardContent className="p-0 lg:p-4 lg:w-7/12">
                     <h3
