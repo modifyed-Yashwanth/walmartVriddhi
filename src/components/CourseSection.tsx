@@ -60,7 +60,7 @@ const CourseSection = () => {
       }, 0);
       return () => clearTimeout(timeoutId);
     }
-  }, [prevRef.current, nextRef.current, swiperRef.current]); // Depend on the refs and swiper instance
+  }, []); // Depend on the refs and swiper instance
 
   const courses = [
     {
