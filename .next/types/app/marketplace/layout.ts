@@ -1,4 +1,4 @@
-// File: /Users/yashwanthsai/Downloads/walmartVriddhi/src/app/marketplace/layout.tsx
+// File: /Users/yashwanthsai/Documents/GitHub/walmartVriddhi/src/app/marketplace/layout.tsx
 import * as entry from '../../../../src/app/marketplace/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
