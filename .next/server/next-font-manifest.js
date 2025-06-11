@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/yashwanthsai/Documents/GitHub/walmartVriddhi/src/app/layout\":[\"static/media/1d9931ff9ce41f2f-s.p.woff2\",\"static/media/44eeff5c86151f56-s.p.woff2\",\"static/media/8aa0224914ad532a-s.p.woff2\",\"static/media/fbbfc8c4cc459643-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
