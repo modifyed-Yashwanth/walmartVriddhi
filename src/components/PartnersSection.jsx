@@ -18,7 +18,7 @@ const PartnersSection = () => {
                   alt="i2i logo"
                   width={110}
                   height={50}
-                  className="object-contain md:me-4 mt-2 md:mt-0"
+                  className="object-contain md:me-6 mt-2 md:mt-0"
                 />
                 <Image
                   src="/images/walmart-marketplace.png"
