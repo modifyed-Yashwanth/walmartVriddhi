@@ -33,7 +33,7 @@ function AboutPageInfographic() {
 
       {/* Arrow indicators */}
       {active === "walmart" && (
-        <div className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out">
+        <div className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out hidden lg:block">
           <Image
             src="/images/marketplace-arrow.png"
             alt="Walmart Arrow"
@@ -43,7 +43,7 @@ function AboutPageInfographic() {
         </div>
       )}
       {active === "flipkart" && (
-        <div className="absolute left-[10%] md:left-[28%] lg:left-[35%] -translate-x-1/2 transition-all duration-500 ease-in-out">
+        <div className="absolute left-[10%] md:left-[28%] lg:left-[35%] -translate-x-1/2 transition-all duration-500 ease-in-out hidden lg:block">
           <Image
             src="/images/flipkart-arrow.png"
             alt="Flipkart Arrow"
@@ -53,7 +53,7 @@ function AboutPageInfographic() {
         </div>
       )}
       {active === "walmartMarketplace" && (
-        <div className="absolute -right-[10%] md:right-[18%] lg:right-[30%] -translate-x-1/2 transition-all duration-500 ease-in-out">
+        <div className="absolute -right-[10%] md:right-[18%] lg:right-[30%] -translate-x-1/2 transition-all duration-500 ease-in-out hidden lg:block">
           <Image
             src="/images/wholesale-arrow.png"
             alt="Wholesale Arrow"
@@ -64,11 +64,11 @@ function AboutPageInfographic() {
       )}
 
       {/* Interactive Icons */}
-      <div className="relative flex justify-between items-end md:gap-0 mt-40 max-w-[500px] md:max-w-[420px] lg:max-w-[500px] mx-auto">
+      <div className="relative flex justify-between items-end md:gap-0 mt-25 lg:mt-40 max-w-[500px] md:max-w-[420px] lg:max-w-[500px] mx-auto">
         {/* Flipkart */}
         <div
           onMouseEnter={() => setActive("flipkart")}
-          className="relative top-0 w-[120px] md:w-[130px] lg:w-[180px] aspect-square cursor-pointer transform duration-300 hover:scale-130"
+          className={clsx(`relative top-0 w-[120px] md:w-[130px] lg:w-[180px] aspect-square cursor-pointer transform duration-300 hover:scale-130 ${active == "flipkart" ? "scale-130" : ''}`)}
         >
           <Image
             src="/images/flipkart-shape.png"
@@ -85,7 +85,7 @@ function AboutPageInfographic() {
         <div
           onMouseEnter={() => setActive("walmart")}
           className={clsx(
-            "relative w-[120px] md:w-[130px] lg:w-[180px] aspect-square cursor-pointer transform duration-300 hover:scale-130"
+            `relative w-[120px] md:w-[130px] lg:w-[180px] aspect-square cursor-pointer transform duration-300 ${active == "walmart" ? "scale-130" : ''}`
           )}
         >
           <Image
@@ -104,7 +104,7 @@ function AboutPageInfographic() {
         <div
           onMouseEnter={() => setActive("walmartMarketplace")}
           className={clsx(
-            "relative w-[120px] md:w-[130px] lg:w-[180px] aspect-square cursor-pointer transform duration-300 hover:scale-130"
+            `relative w-[120px] md:w-[130px] lg:w-[180px] aspect-square cursor-pointer transform duration-300 ${active == "walmartMarketplace" ? "scale-130" : ''}`
           )}
         >
           <Image

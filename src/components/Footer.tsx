@@ -160,11 +160,11 @@ const Footer = () => {
               <a onClick={() => setShowDisclaimer(true)}></a>
               <Dialog open={showDisclaimer} onOpenChange={setShowDisclaimer}>
                 <DialogTrigger>
-                  <h1 className="hover:text-[#0053e2] text-[12px] md:text-[16px]">
+                  <p className="hover:text-[#0053e2] text-[12px] md:text-[16px] cursor-pointer">
                     Disclaimer
-                  </h1>
+                  </p>
                 </DialogTrigger>
-                <DialogContent className="w-[80%]">
+                <DialogContent className="w-full">
                   <DialogTitle>Disclaimer</DialogTitle>
                   <div className="whitespace-pre-line leading-relaxed text-gray-700">
                     {disclaimer}

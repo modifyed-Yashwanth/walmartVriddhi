@@ -1,27 +1,27 @@
 export const slides = [
-  {
-    id: 1,
-    image: "/images/Homepage Banner 1 (v).jpg",
-    title: "Grow with Walmart Vriddhi",
-    description: "",
-    slide_link: "https://supplieracademy.northpass.com/",
-    overlay: true,
-  },
-  {
-    id: 2,
-    image: "/images/Homepage-banner-2wv.png",
-    title: "Helping MSMEs Leverage Digital Capabilities to Unlock Growth",
-    description: "",
-    slide_link: "https://supplieracademy.northpass.com/",
-    overlay: true,
-  },
+  // {
+  //   id: 1,
+  //   image: "/images/Homepage Banner 1 (v).jpg",
+  //   title: "Grow with Walmart Vriddhi",
+  //   description: "",
+  //   slide_link: "https://supplieracademy.northpass.com/",
+  //   overlay: true,
+  // },
+  // {
+  //   id: 2,
+  //   image: "/images/Homepage-banner-2wv.png",
+  //   title: "Helping MSMEs Leverage Digital Capabilities to Unlock Growth",
+  //   description: "",
+  //   slide_link: "https://supplieracademy.northpass.com/",
+  //   overlay: true,
+  // },
   {
     id: 3,
     image: "/images/msme-mobile.png",
     title: "Register now for MSME Summit 2025",
     description: "",
     slide_link: "https://taffexperience.com/msme-summit-2025/",
-    overlay: true,
+    overlay: false,
   },
 ];
 

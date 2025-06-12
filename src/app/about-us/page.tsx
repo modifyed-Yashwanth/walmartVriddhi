@@ -171,7 +171,7 @@ function Page() {
 
       {/* Marketplace Info Section */}
       <AnimatedSection>
-        <div className="hidden lg:block">
+        <div>
           <AboutPageInfographic />
         </div>
       </AnimatedSection>
