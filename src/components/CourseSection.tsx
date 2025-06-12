@@ -162,9 +162,9 @@ const CourseSection = () => {
             }}
             className="courses-swiper py-[50px]"
           >
-            {courses.map((course) => (
+            {courses.map((course, index) => (
               <SwiperSlide
-                key={course.id}
+                key={index}
                 style={{ background: "transparent" }}
                 className="relative overflow-visible md:px-[20px] py-[20px]"
               >

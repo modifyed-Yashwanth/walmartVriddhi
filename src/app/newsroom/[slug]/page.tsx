@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import React from "react";
-import he from "he"
+import he from "he";
 
 const NewsroomAnnouncement = () => {
   const params = useParams();
@@ -57,11 +57,11 @@ const NewsroomAnnouncement = () => {
     }
   };
 
-  const plainDesc = he.decode(data.excerpt.rendered.replace(/<[^>]*>/g, ''));
+  const plainDesc = he.decode(data.excerpt.rendered.replace(/<[^>]*>/g, ""));
 
   return (
     <>
-     <Seo
+      <Seo
         title={data.title.rendered}
         description={plainDesc}
         url={`https://www.walmartvriddhi.org/newsroom/${slug}`}
@@ -78,32 +78,32 @@ const NewsroomAnnouncement = () => {
           },
         }}
       />
-    
-    <div className="min-h-screen">
-      {/* Breadcrumb */}
-      <div className="text-xs font-normal cursor-pointer block md:flex gap-3 my-2 sm:my-2 md:my-2 pb-4">
-        <Link href="/" className="flex gap-x-2 mb-2 md:mb-0">
-          <span className="underline">Home</span> &gt;
-        </Link>
-        <Link href="/newsroom" className="flex gap-x-2 mb-2 md:mb-0">
-          <span className="underline">Newsroom</span> &gt;
-        </Link>
-        <p className="capitalize">{slug?.split("-").join(" ")}</p>
-      </div>
-      <Separator className="" />
 
-      {/* Content Section */}
-      <div className="bg-white space-y-6 sm:space-y-8 pt-6 md:pt-10">
-        {/* Title */}
-        <h1
-          className="text-xl sm:text-2xl md:text-3xl font-[300] mb-4 text-black"
-          dangerouslySetInnerHTML={{ __html: data.title.rendered }}
-        />
+      <div className="min-h-screen">
+        {/* Breadcrumb */}
+        <div className="text-xs font-normal cursor-pointer block md:flex gap-3 my-2 sm:my-2 md:my-2 pb-4">
+          <Link href="/" className="flex gap-x-2 mb-2 md:mb-0">
+            <span className="underline">Home</span> &gt;
+          </Link>
+          <Link href="/newsroom" className="flex gap-x-2 mb-2 md:mb-0">
+            <span className="underline">Newsroom</span> &gt;
+          </Link>
+          <p className="capitalize">{slug?.split("-").join(" ")}</p>
+        </div>
+        <Separator className="" />
 
-        {/* Date and Social Share */}
-        <div className="text-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-          <span className="text-black">{date}</span>
-          <div className="flex gap-4 sm:gap-5 text-black">
+        {/* Content Section */}
+        <div className="bg-white space-y-6 sm:space-y-8 pt-6 md:pt-10">
+          {/* Title */}
+          <h1
+            className="text-xl sm:text-2xl md:text-3xl font-[300] mb-4 text-black"
+            dangerouslySetInnerHTML={{ __html: data.title.rendered }}
+          />
+
+          {/* Date and Social Share */}
+          <div className="text-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+            <span className="text-black">{date}</span>
+            <div className="flex gap-4 sm:gap-5 text-black">
               <i
                 className="fab fa-facebook cursor-pointer hover:text-blue-600 transition-colors"
                 onClick={() => handleSocialShare("facebook")}
@@ -119,34 +119,34 @@ const NewsroomAnnouncement = () => {
                 onClick={() => handleSocialShare("twitter")}
                 title="Share on Twitter"
               />
-            <i
-              className="fas fa-envelope cursor-pointer hover:text-red-500 transition-colors"
-              onClick={() => handleSocialShare("email")}
-              title="Share via Email"
-            />
-            <i
-              className="fas fa-link cursor-pointer hover:text-gray-600 transition-colors"
-              onClick={() => handleSocialShare("copy")}
-              title="Copy Link"
-            />
+              <i
+                className="fas fa-envelope cursor-pointer hover:text-red-500 transition-colors"
+                onClick={() => handleSocialShare("email")}
+                title="Share via Email"
+              />
+              <i
+                className="fas fa-link cursor-pointer hover:text-green-500 transition-colors"
+                onClick={() => handleSocialShare("copy")}
+                title="Copy Link"
+              />
+            </div>
           </div>
-        </div>
 
-        {/* Featured Image */}
-        <div className="w-full flex justify-center">
-          <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] md:aspect-[24/9] rounded-xl overflow-hidden">
-            <Image
-              src={data?.acf["inside_banner"]}
-              alt={"Newsroom announcement details"}
-              fill
-              className="object-cover object-top"
-              priority
-            />
+          {/* Featured Image */}
+          <div className="w-full flex justify-center">
+            <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] md:aspect-[24/9] rounded-xl overflow-hidden">
+              <Image
+                src={data?.acf["inside_banner"]}
+                alt={"Newsroom announcement details"}
+                fill
+                className="object-cover object-top"
+                priority
+              />
+            </div>
           </div>
-        </div>
 
-        {/* Content */}
-        <style>{`
+          {/* Content */}
+          <style>{`
            .newsroom-content ul {
             list-style-type: disc;
             padding-left: 1.5rem;
@@ -163,12 +163,12 @@ const NewsroomAnnouncement = () => {
             margin-bottom: 0.5rem;
           }
         `}</style>
-        <div
-          className="prose prose-sm sm:prose-base md:prose-lg max-w-none leading-relaxed sm:leading-relaxed md:leading-relaxed newsroom-heading-stale newsroom-content"
-          dangerouslySetInnerHTML={{ __html: data.content.rendered }}
-        />
+          <div
+            className="prose prose-sm sm:prose-base md:prose-lg max-w-none leading-relaxed sm:leading-relaxed md:leading-relaxed newsroom-heading-stale newsroom-content"
+            dangerouslySetInnerHTML={{ __html: data.content.rendered }}
+          />
+        </div>
       </div>
-    </div>
     </>
   );
 };

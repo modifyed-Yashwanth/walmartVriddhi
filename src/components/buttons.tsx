@@ -55,7 +55,7 @@ export const SecondaryButton = ({
     return (
       <Link
         href={href}
-        target={target ? "_self" : undefined}
+        target={target ? target : "_self"}
         className={clsx(combinedClasses, {
           "pointer-events-none opacity-50 w-max": disabled,
         })}

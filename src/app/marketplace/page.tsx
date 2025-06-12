@@ -72,7 +72,7 @@ function page() {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 my-8">
               <div className="md:col-span-1 flex items-center">
-                <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[260px] w-full overflow-hidden bg-[#F3F3F3]">
+                <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[300px] w-full overflow-hidden bg-[#F3F3F3]">
                   <div className="w-full sm:w-[40%] h-[200px] sm:h-full relative">
                     <Image
                       src="/images/msmes.jpg"
@@ -98,7 +98,7 @@ function page() {
                 </Card>
               </div>
               <div className="md:col-span-1 flex items-center">
-                <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[260px] w-full overflow-hidden bg-[#F3F3F3]">
+                <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[300px] w-full overflow-hidden bg-[#F3F3F3]">
                   <div className="w-full sm:w-[40%] h-[200px] sm:h-full relative">
                     <Image
                       src="/images/msmes2.jpg"
@@ -122,7 +122,7 @@ function page() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
               <div className="md:col-span-1 flex items-center">
-                <Card className="flex flex-col md:flex-row items-center h-auto sm:h-[240px] md:h-[260px] w-full overflow-hidden bg-[#F3F3F3]">
+                <Card className="flex flex-col md:flex-row items-center h-auto sm:h-[240px] md:h-[300px] w-full overflow-hidden bg-[#F3F3F3]">
                   <div className="w-full sm:w-[40%] h-[200px] sm:h-full relative">
                     <Image
                       src="/images/marketplace-3.jpg"
@@ -143,7 +143,7 @@ function page() {
                 </Card>
               </div>
               <div className="md:col-span-1 flex items-center">
-                <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[260px] w-full overflow-hidden bg-[#F3F3F3]">
+                <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[300px] w-full overflow-hidden bg-[#F3F3F3]">
                   <div className="w-full sm:w-[40%] h-[200px] sm:h-full relative">
                     <Image
                       src="/images/marketplace-4.jpg"
