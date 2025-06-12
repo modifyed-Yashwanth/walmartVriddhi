@@ -7,8 +7,8 @@ import AnimatedSection from "./AnimatedSection";
 const HeroBottomSection = () => {
   return (
     <AnimatedSection delay={0.2}>
-      <div className="py-10">
-        <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden my-10 rounded-xl">
+      <div className="py-2">
+        <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden my-4 rounded-xl">
           <Image
             src="/images/bottom-banner.jpg"
             alt="Walmart Hero"
