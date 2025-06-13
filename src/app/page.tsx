@@ -53,9 +53,6 @@ export default function Home() {
           <Leadership />
           <ProgramOpportunitySection />
           <ProgramBenefits
-            title={benefitsData.title}
-            subtitle={benefitsData.subtitle}
-            description={benefitsData.description}
             benefits={benefitsData.benefits}
           />
           {/* <ImpactReach />

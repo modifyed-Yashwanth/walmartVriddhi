@@ -26,10 +26,6 @@ export const slides = [
 ];
 
 export const benefitsData = {
-  title: "Unlock Your Business Potential with Walmart",
-  subtitle: "Program Benefits",
-  description:
-    "Walmart Vriddhi offers a range of benefits designed to empower MSMEs. From free mentoring to market access, we provide the support you need to thrive. Join us and take your business to new heights!",
   benefits: [
     {
       image: "/images/benefit.jpg",

@@ -48,7 +48,7 @@ export default function FAQPage() {
       <AnimatedSection>
         <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden md:mb-10">
           <Image
-            src="/images/faqs-banner.jpg"
+            src="/images/faqs_banner.jpg"
             alt="faqs-banner"
             className="object-cover"
             fill
@@ -129,7 +129,7 @@ export default function FAQPage() {
                       className="border rounded-lg overflow-hidden bg-white"
                     >
                       <AccordionTrigger
-                        className={`px-4 hover:no-underline transition-colors duration-300 ${
+                        className={`px-4 hover:no-underline transition-colors duration-300 cursor-pointer ${
                           isActive ? "bg-blue-50" : "bg-white"
                         }`}
                       >
@@ -137,8 +137,8 @@ export default function FAQPage() {
                           {faq.question}
                         </span>
                       </AccordionTrigger>
-                      <AccordionContent className="p-4 border-t font-normal text-md">
-                        <p className="text-gray-700">{faq.answer}</p>
+                      <AccordionContent className="p-4 border-t">
+                        <p className="text-gray-700 leading-5">{faq.answer}</p>
                       </AccordionContent>
                     </AccordionItem>
                   );

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { SecondaryButton } from "./buttons";
 import AnimatedSection from "./AnimatedSection";
 import StaggeredAnimatedSection from "./StaggeredAnimatedSection";
 
@@ -28,7 +27,7 @@ const features = [
   },
   {
     id: 5,
-    icon: "/images/Enablement Support.svg",
+    icon: "/images/Support-enablement.svg",
     title: "Enablement Support",
   },
 ];
@@ -114,7 +113,6 @@ export default function MSMEGrowth() {
               className="mx-auto mb-4"
             />
             <h3 className="text-xl mb-2">{features[4].title}</h3>
-            <SecondaryButton href="/msme-growth-journey" text="View More" />
           </div>
         </StaggeredAnimatedSection>
       </section>

@@ -15,13 +15,13 @@ function page() {
         <AnimatedSection>
           <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
             <Image
-              src="/images/Marketplace-Bannerv2.jpg"
+              src="/images/MSME-Growth-Journey-Banner.jpg"
               alt="Walmart Marketplace Banner"
               className="object-cover object-right md:object-top"
               fill
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-r w-full md:w-[65%] lg:w-[50%] from-black/0 from-40% opacity-60" />
+            <div className="absolute inset-0 bg-gradient-to-r w-full md:w-[65%] lg:w-[50%] from-black/20 from-40% opacity-60" />
             <div className="absolute inset-0 flex items-center">
               <div className="px-4 sm:px-8 md:px-12 lg:left-12 max-w-full md:max-w-lg lg:max-w-xl text-white">
                 <h2 className="text-2xl md:text-4xl font-semibold mb-2 leading-tight">
