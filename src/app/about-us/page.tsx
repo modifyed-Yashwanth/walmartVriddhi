@@ -75,7 +75,7 @@ function Page() {
             <div className="md:col-span-10">
               <h2 className="text-2xl md:text-4xl mb-4">About Walmart</h2>
               <p>
-                Walmart Inc. (NYSE: WMT) is a people-led, tech-powered
+                Walmart Inc. is a people-led, tech-powered
                 omnichannel retailer helping people save money and live better -
                 anytime and anywhere - in stores, online, and through their
                 mobile devices. Each week, approximately 270 million customers

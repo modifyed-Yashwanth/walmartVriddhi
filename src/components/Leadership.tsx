@@ -20,7 +20,7 @@ function Leadership() {
           <h2 className="text-2xl md:text-4xl">Leadership Video</h2>
         </StaggeredAnimatedSection>
 
-        <div className="mt-4 md:mt-10 w-full px-30">
+        <div className="mt-4 md:mt-10 w-full lg:px-30">
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
             {!isPlaying ? (
               <div

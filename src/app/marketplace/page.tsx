@@ -17,7 +17,7 @@ function page() {
             <Image
               src="/images/MSME-Growth-Journey-Banner.jpg"
               alt="Walmart Marketplace Banner"
-              className="object-cover object-right md:object-top"
+              className="object-cover object-right"
               fill
               priority
             />
@@ -265,7 +265,7 @@ function page() {
               <div>
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 leading-normal">
                   Complete Walmart Vriddhi learning modules to be eligible to
-                  see on Walmart Marketplace
+                  sell on Walmart Marketplace
                 </h2>
                 <a
                   href="https://seller.walmart.com/signup?q=&origin=marketing_campaign&src=TestIndiaCampaign_Vriddhi&exp=MjAyNS0wMy0xNA=="

@@ -21,7 +21,7 @@ export default function Page() {
           <Image
             src="/images/Marketplace-Bannerv2.jpg"
             alt="success stories hero image"
-            className="object-cover"
+            className="object-cover object-right"
             fill
             priority
           />
