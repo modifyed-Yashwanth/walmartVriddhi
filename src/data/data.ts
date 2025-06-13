@@ -18,7 +18,7 @@ export const slides = [
   {
     id: 3,
     image: "/images/msme-mobile.png",
-    title: "Register now for MSME Summit 2025",
+    title: "Register for Walmart Vriddhi MSME Summit 2025",
     description: "",
     slide_link: "https://taffexperience.com/msme-summit-2025/",
     overlay: false,
