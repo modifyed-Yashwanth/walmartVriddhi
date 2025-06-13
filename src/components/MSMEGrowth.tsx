@@ -27,7 +27,7 @@ const features = [
   },
   {
     id: 5,
-    icon: "/images/Enablement Support.svg",
+    icon: "/images/Support-enablement.svg",
     title: "Enablement Support",
   },
 ];
