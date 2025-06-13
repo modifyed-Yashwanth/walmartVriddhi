@@ -8,7 +8,7 @@ function layout({ children }: ChildrenProps) {
     <>
       <Navbar />
       <div className="mx-auto my-[35px] max-w-[1500px] px-4 md:px-15 pt-14">
-      {children}
+        {children}
       </div>
       <Footer />
     </>

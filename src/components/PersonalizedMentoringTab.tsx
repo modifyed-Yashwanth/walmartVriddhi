@@ -8,15 +8,18 @@ export default function PersonalizedMentoringTab() {
       <div className="pt-5">
         <div className="flex flex-col items-start w-full">
           <h2 className="text-2xl md:text-4xl mb-2">Personalized Mentoring</h2>
-          <p className="mb-2">
-            One-to-one mentoring support to help you handle business challenges
-            and make the most of opportunities.
-          </p>
-          <p>
-            Mentors act as strategy experts to guide Vriddhi entrepreneurs on
-            their transformational journey to help them identify the key action
-            points and take their business forward to the next level.
-          </p>
+          <div className="flex flex-col items-start space-y-4">
+            <p className="mb-2">
+              Personalized one-on-one mentoring will help you navigate business
+              challenges and leverage new opportunities.
+            </p>
+            <p>
+              Experienced mentors serve as strategic advisors, supporting
+              Walmart Vriddhi entrepreneurs in their transformational journey by
+              helping them identify critical action points and drive their
+              businesses to the next level of growth.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-25 max-w-4xl mx-auto">
             <div className="px-[2px] border rounded-2xl bg-[#f3f3f3] shadow-md border-[#cccccc] mb-10 md:mb-0 hover:scale-105 duration-500 transition-transform">
               <div className="flex flex-col items-center mb-4">
@@ -31,8 +34,8 @@ export default function PersonalizedMentoringTab() {
                   <div className="h-0 w-0 mx-auto border-l-20 border-r-20 border-t-20 border-l-transparent border-r-transparent border-t-[#A9DDF7] absolute -bottom-5 inset-x-0"></div>
                 </div>
                 <p className="mt-6 p-6 text-center">
-                  Do a SWOT Analysis (Strengths, weaknesses, opportunities and
-                  threats)
+                  Conduct/Perform a SWOT Analysis (Strengths, weaknesses,
+                  opportunities and threats) opportunities
                 </p>
               </div>
             </div>
@@ -137,10 +140,9 @@ export default function PersonalizedMentoringTab() {
               </div>
             </div>
             <div
-              className="md:col-span-6 flex items-center bg-cover bg-center-top w-full h-full rounded-xl relative before:absolute before:h-[90%] before:w-[90%] before:border-2 before:block before:border-white before:inset-x-0 before:left-[5%] before:rounded-xl min-h-[100%] md:min-h-[350px]"
+              className="md:col-span-6 flex items-center bg-cover  w-full h-full rounded-xl relative before:absolute before:h-[90%] before:w-[90%] before:border-2 before:block before:border-white before:inset-x-0 before:left-[5%] before:rounded-xl min-h-[100%] md:min-h-[350px]"
               style={{
-                backgroundImage:
-                  "url('/images/Personalized-Mentoring-image.jpg')",
+                backgroundImage: "url('/images/Personalized Mentoring.png')",
               }}
             ></div>
           </div>

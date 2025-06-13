@@ -11,9 +11,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { faqs } from "@/data/data";
+import Seo from "@/components/misc/Seo";
 
 export default function FAQPage() {
-  const [activeTab, setActiveTab] = useState("Lorem Ipsum");
+  const [activeTab, setActiveTab] = useState("About Walmart Vriddhi");
   const [searchTerm, setSearchTerm] = useState("");
   const [openItem, setOpenItem] = useState<string | null>(null); // <-- For tracking active accordion item
 
@@ -26,6 +27,23 @@ export default function FAQPage() {
 
   return (
     <>
+      <Seo
+        title="Frequently Asked Questions - Walmart Vriddhi"
+        description="Find answers to common questions about Walmart Vriddhi, MSME support, marketplace onboarding, program benefits, and how to get started."
+        url="https://walmart-vriddhi.vercel.app/faqs"
+        image="/favicon/android-chrome-192x192.png"
+        structuredData={{
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          name: "walmartvriddhi",
+          url: "https://www.walmartvriddhi.org/",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: "https://www.walmartvriddhi.org/{search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
+        }}
+      />
       {/* Hero Section */}
       <AnimatedSection>
         <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden md:mb-10">
@@ -49,7 +67,7 @@ export default function FAQPage() {
 
       {/* FAQs Section */}
       <AnimatedSection>
-        <div className="max-w-4xl mx-auto py-6 md:px-6">
+        <div className="max-w-6xl mx-auto py-6 md:px-6">
           <h2 className="text-2xl md:text-4xl text-center mb-10">
             Search and Explore Categories of Frequently Asked Questions
           </h2>
@@ -68,12 +86,19 @@ export default function FAQPage() {
 
           {/* Tabs */}
           <hr className="my-6 border-1 border-gray-300 w-full" />
-          <div className="block md:flex gap-12 justify-center text-center mb-6 md:pb-10 pt-5">
-            {["Lorem Ipsum", "Lorem Ipsum2", "Lorem Ipsum3"].map((tab) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-2 md:px-2 justify-items-center mb-6 md:pb-10 pt-5">
+            {[
+              "About Walmart Vriddhi",
+              "Program Benefits and Implementation",
+              "Market Access and Opportunities",
+              "Program Structure and Curriculum",
+              "Application Process",
+              "Support and assistance",
+            ].map((tab) => (
               <SecondaryButton
                 key={tab}
                 text={tab}
-                className={`mb-4 md:mb-0 ${
+                className={`h-[48px] min-w-[350px] text-sm md:text-base whitespace-normal text-center ${
                   activeTab === tab ? "bg-[#0053e2] text-white" : ""
                 }`}
                 onClick={() => setActiveTab(tab)}

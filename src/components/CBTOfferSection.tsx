@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import SwiperCore from "swiper";
@@ -103,10 +103,10 @@ const CoursesSection = () => {
         {/* Courses Slider */}
         <div className="relative">
           {/* Navigation Buttons */}
-          <div className="flex justify-end mb-4 gap-2 z-50 pointer-events-auto">
+          <div className="absolute top-1/2 -translate-y-1/2 left-[-40px] right-[-40px] flex justify-between z-20 pointer-events-none">
             <button
               ref={prevRef}
-              className="w-20 h-10 rounded-4xl border border-gray-300 hover:border-[#0053e2] flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer group"
+              className="w-10 h-10 rounded-full border border-gray-300 hover:border-[#0053e2] flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer group pointer-events-auto"
               aria-label="Previous slide"
               disabled={isBeginning}
             >
@@ -118,7 +118,7 @@ const CoursesSection = () => {
             </button>
             <button
               ref={nextRef}
-              className="w-20 h-10 rounded-4xl border border-gray-300 hover:border-[#0053e2] flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer group"
+              className="w-10 h-10 rounded-full border border-gray-300 hover:border-[#0053e2] flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer group pointer-events-auto"
               aria-label="Next slide"
               disabled={isEnd}
             >
@@ -135,12 +135,16 @@ const CoursesSection = () => {
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
             navigation={{
               prevEl: prevRef.current,
               nextEl: nextRef.current,
+            }}
+            autoplay={{
+              delay: 7000,
+              disableOnInteraction: false,
             }}
             onBeforeInit={(swiper) => {
               if (
@@ -161,11 +165,11 @@ const CoursesSection = () => {
                 spaceBetween: 24,
               },
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 24,
               },
             }}
-            className="courses-swiper py-[50px]"
+            className="courses-swiper py-[50px] px-12"
           >
             {courses.map((course) => (
               <SwiperSlide
@@ -173,12 +177,12 @@ const CoursesSection = () => {
                 style={{ background: "transparent" }}
                 className="relative overflow-visible p-[20px]"
               >
-                <div className="relative">
+                <div className="relative w-[80%] justify-center items-center">
                   <Image
                     src="/images/CBT-icon-min.png"
                     alt="CBT-icon"
-                    width={200}
-                    height={200}
+                    width={100}
+                    height={100}
                     className="w-full"
                   />
                   <p className="absolute inset-0 flex justify-center items-center w-40 mx-auto text-center text-[14px]">

@@ -2,9 +2,10 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { NarrativesSliderProps } from "@/types/types";
-import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, Copy, Check } from "lucide-react";
 import Image from "next/image";
 import VideoDialog from "./VideoDialog";
+import { toast } from "sonner";
 
 // Helper to get duration of a video
 function GetVideoDuration({
@@ -50,6 +51,9 @@ function VideosSlider({ slides }: NarrativesSliderProps) {
   const [videoDurations, setVideoDurations] = useState<{
     [key: number]: string;
   }>({});
+  const [isCopiedMap, setIsCopiedMap] = useState<{ [key: number]: boolean }>(
+    {}
+  );
 
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -64,6 +68,16 @@ function VideosSlider({ slides }: NarrativesSliderProps) {
       ...prev,
       [index]: duration,
     }));
+  };
+
+  const handleCopyLink = (videoLink: string, index: number) => {
+    navigator.clipboard.writeText(videoLink);
+    setIsCopiedMap((prev) => ({ ...prev, [index]: true }));
+    toast.success("Video link copied to clipboard!");
+
+    setTimeout(() => {
+      setIsCopiedMap((prev) => ({ ...prev, [index]: false }));
+    }, 3000);
   };
 
   return (
@@ -103,18 +117,36 @@ function VideosSlider({ slides }: NarrativesSliderProps) {
                     className="object-cover rounded-t-xl"
                   />
                   <div className="absolute inset-0 flex justify-center items-center">
-                    <div className="bg-white/30 p-2 sm:p-3 md:p-4 rounded-full cursor-pointer hover:scale-112 transition-all duration-300 group" 
-                        onClick={() => setOpenVideo(slide.acf.video_link || "")}>
-                      <Play
-                        className="w-4 h-4 sm:w-6 sm:h-6 text-white fill-white group-hover:text-[#0053e2] group-hover:fill-[#0053e2]"
-                      />
+                    <div
+                      className="bg-white/30 p-2 sm:p-3 md:p-4 rounded-full cursor-pointer hover:scale-112 transition-all duration-300 group"
+                      onClick={() => setOpenVideo(slide.acf.video_link || "")}
+                    >
+                      <Play className="w-4 h-4 sm:w-6 sm:h-6 text-white fill-white group-hover:text-[#0053e2] group-hover:fill-[#0053e2]" />
                     </div>
                   </div>
                 </div>
                 <div className="p-3 sm:p-4">
-                  <p className="text-xs sm:text-sm font-medium line-clamp-2">
-                    {slide.title.rendered}
-                  </p>
+                  <div className="flex justify-between items-center">
+                    <p className="text-xs sm:text-sm font-medium line-clamp-2 pr-2">
+                      {slide.title.rendered}
+                    </p>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation(); // Prevent opening video when copying
+                        handleCopyLink(slide.acf.video_link || "", idx);
+                      }}
+                      className="flex-shrink-0 p-1 rounded-full hover:bg-gray-200 focus:outline-none relative group"
+                    >
+                      {isCopiedMap[idx] ? (
+                        <Check className="w-4 h-4 text-green-600" />
+                      ) : (
+                        <Copy className="w-4 h-4 text-gray-500 hover:text-[#0053e2]" />
+                      )}
+                      <span className="absolute -top-8 left-[60%] transform -translate-x-[70%] bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        {isCopiedMap[idx] ? "Copied!" : "Copy link"}
+                      </span>
+                    </button>
+                  </div>
                   <p className="text-xs text-[#0053e2] font-semibold mt-2">
                     {videoDurations[idx] || "Loading..."}
                   </p>

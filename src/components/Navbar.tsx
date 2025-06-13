@@ -14,10 +14,11 @@ export default function Navbar({ sticky = true }: { sticky?: boolean }) {
 
   const menuItems = [
     ["About Us", "/about-us"],
-    ["Success Stories", "/success-stories"],
+    ["MSME Growth Journey", "/msme-growth-journey"],
     ["Walmart Marketplace", "/marketplace"],
     ["Resources", "/resource-hub"],
     ["Newsroom", "/newsroom"],
+    ["Success Stories", "/success-stories"],
     ["FAQs", "/faqs"],
   ];
 
@@ -123,10 +124,11 @@ export default function Navbar({ sticky = true }: { sticky?: boolean }) {
             <ul className="flex flex-col space-y-4 text-white">
               {[
                 ["About Us", "/about-us"],
-                ["Success Stories", "/success-stories"],
+                ["MSME Growth Journey", "/msme-growth-journey"],
                 ["Walmart Marketplace", "/marketplace"],
                 ["Resources", "/resource-hub"],
                 ["Newsroom", "/newsroom"],
+                ["Success Stories", "/success-stories"],
                 ["FAQs", "/faqs"],
               ].map(([label, href]) => (
                 <li key={label}>

@@ -12,8 +12,8 @@ export default function LearningTab() {
         <div className="flex flex-col items-start w-full">
           <h2 className="text-2xl md:text-4xl mb-2">Learning</h2>
           <p className="mb-2">
-            The Walmart Vriddhi learning program equips you with tailored
-            support to help you unlock your growth potential.
+            Walmart Vriddhi provides tailored support to help MSMEs realize and
+            accelerate business growth potential.
           </p>
           <hr className="my-6 border-2 border-gray-300 w-full" />
         </div>
@@ -45,7 +45,9 @@ export default function LearningTab() {
         {/* Tab-specific Content */}
         <div className="w-full px-4 sm:px-0 pb-6">
           {activeTab === "advanced-business" && <LearningAdvancedBusinessTab />}
-          {activeTab === "business-fundamentals" && <LearningBusinessFundamentalsTab />}
+          {activeTab === "business-fundamentals" && (
+            <LearningBusinessFundamentalsTab />
+          )}
         </div>
       </div>
     </>

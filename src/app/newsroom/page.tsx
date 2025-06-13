@@ -13,16 +13,14 @@ export default function Page() {
   const [activeTab, setActiveTab] = useState<"announcements" | "vridhi-news">(
     "announcements"
   );
-  
-  const url = 'https://www.walmartvriddhi.org/newsroom/';
 
   return (
     <>
-     <Seo
-        title="MSME growth program, MSME growth journey program, MSME Supply Chain Management, msme online training program"
-        description="Walmart Vriddhi has assisted countless small businesses in going digital and growing their market reach Learn more about the different steps of the MSME growth journey program here"
-        url={url}
-        image="/images/MSME-Growth-Journey-Banner.jpg"
+      <Seo
+        title="Newsroom - Walmart Vriddhi"
+        description="Discover the latest news, success stories, and media updates from Walmart Vriddhi - advancing MSME growth, digital transformation, and entrepreneurship across India."
+        url="https://www.walmartvriddhi.org/newsroom/"
+        image="/favicon/android-chrome-192x192.png"
         structuredData={{
           "@context": "https://schema.org/",
           "@type": "WebSite",
@@ -30,7 +28,7 @@ export default function Page() {
           url: "https://www.walmartvriddhi.org/",
           potentialAction: {
             "@type": "SearchAction",
-            target: `${url}{search_term_string}`,
+            target: "https://www.walmartvriddhi.org/{search_term_string}",
             "query-input": "required name=search_term_string",
           },
         }}
@@ -74,7 +72,7 @@ export default function Page() {
               onClick={() => setActiveTab("announcements")}
             />
             <SecondaryButton
-              text="Vriddhi in the News"
+              text="Walmart Vriddhi in the News"
               className={`w-full sm:w-[220px] md:w-[260px] ${
                 activeTab === "vridhi-news"
                   ? "bg-[#0053e2] text-white border-[#0053e2]"

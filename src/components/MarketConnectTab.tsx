@@ -7,28 +7,33 @@ import {
   ShoppingCart,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MarketConnectTab() {
   const onboardingSteps = [
     {
       icon: Store,
-      title: "Sign up as a seller on Flipkart",
+      title: "Sign up as a seller on ",
+      hrefName: "Flipkart",
+      href: "https://seller.flipkart.com/",
     },
     {
       icon: FileText,
-      title: "Update GSTIN in Seller Dashboard",
+      title:
+        "Update your pickup address and fill in the remaining required details, including your regular GSTIN in the Seller Dashboard",
     },
     {
       icon: Upload,
-      title: "Upload one listing on Flipkart",
+      title: "Upload your first product listing on Flipkart",
     },
     {
       icon: CheckCircle,
-      title: "Select brand and vertical approval when listing products",
+      title:
+        "Select the appropriate brand and vertical for approval during the listing creation process",
     },
     {
       icon: ShoppingCart,
-      title: "Process new orders",
+      title: "Process any new orders received on Flipkart",
       isLast: true,
     },
   ];
@@ -38,24 +43,27 @@ export default function MarketConnectTab() {
         <div className="flex flex-col items-start w-full">
           <h2 className="text-2xl md:text-4xl mb-2">Market Connect</h2>
           <p>
-            Expand your business reach by capturing new markets and widening
-            existing markets. Vriddhi offers you the opportunity to grow through
-            the supply chains of Flipkart and Walmart and other major domestic
-            companies.
+            Expand your business reach by entering new markets and strengthening
+            your presence in existing ones. Walmart Vriddhi offers opportunities
+            for growth by connecting you to the supply chains of Flipkart,
+            Walmart.
           </p>
           <hr className="my-6 border-2 border-gray-300 w-full" />
-          <h3 className="text-lg font-[400] mb-4">Domestic</h3>
+          <h3 className="text-lg font-[400] mb-4">Domestic Flipkart</h3>
           <p>
-            As a Walmart Vriddhi-certified seller, you would be eligible for
-            onboarding as well as incubation support to take your business
-            digital on Flipkart.
+            As a Walmart Vriddhi graduate, a seller is eligible for onboarding
+            as well as incubation support to take your business digital on
+            Flipkart.
           </p>
         </div>
       </div>
       <div className="relative w-full rounded-xl overflow-hidden my-6 md:my-10 space-y-6 sm:space-y-10 md:space-y-14 bg-[#F3F3F3] py-10">
         <div className="px-4 md:px-12">
-          <div>
-            <h2 className="text-2xl md:text-4xl mb-10">Onboarding</h2>
+          <div className="mb-10 space-y-2">
+            <h2 className="text-2xl md:text-4xl ">Onboarding</h2>
+            <p>
+              Register and begin selling on Flipkart with step-by-step guidance
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-10 gap-6 ">
             <div className="md:col-span-5 flex items-center">
@@ -76,9 +84,22 @@ export default function MarketConnectTab() {
                         )}
                       </div>
                       <div className="flex-1 pt-2">
-                        <p className="text-gray-800 font-medium leading-relaxed">
-                          {step.title}
-                        </p>
+                        {step.hrefName ? (
+                          <p className="text-gray-800 font-medium leading-relaxed">
+                            {step.title}
+                            <Link
+                              href={step.href}
+                              className="text-[#0053e2]"
+                              target="_blank"
+                            >
+                              {step.hrefName}
+                            </Link>
+                          </p>
+                        ) : (
+                          <p className="text-gray-800 font-medium leading-relaxed">
+                            {step.title}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -115,8 +136,8 @@ export default function MarketConnectTab() {
           <div className="block md:flex gap-10 col-span-5 lg:col-span-9">
             <p className="text-[#0053e2] text-2xl font-regular">01</p>
             <p className="text-[#0053e2] text-xl font-regular">
-              Support to monitor business performance and connect with an
-              Account Manager at least 4 times a week.
+              Support to select the right products through knowledge of ‘Best
+              Selling’ and ‘New and Trending’.
             </p>
           </div>
         </div>
@@ -136,8 +157,7 @@ export default function MarketConnectTab() {
           <div className="block md:flex gap-10 col-span-5 lg:col-span-9">
             <p className="text-[#0053e2] text-2xl font-regular">02</p>
             <p className="text-[#0053e2] text-xl font-regular">
-              Support to monitor business performance and connect with an
-              Account Manager at least 4 times a week.
+              Guidance on pricing the products based on available information.
             </p>
           </div>
         </div>
@@ -178,8 +198,8 @@ export default function MarketConnectTab() {
           <div className="block md:flex gap-10 col-span-5 lg:col-span-9">
             <p className="text-[#0053e2] text-2xl font-regular">04</p>
             <p className="text-[#0053e2] text-xl font-regular">
-              Support to monitor business performance and connect with an
-              Account Manager at least 4 times a week.
+              Assistance with keyword selection and advertising services to
+              increase visibility.
             </p>
           </div>
         </div>
@@ -199,8 +219,9 @@ export default function MarketConnectTab() {
           <div className="block md:flex gap-10 col-span-5 lg:col-span-9">
             <p className="text-[#0053e2] text-2xl font-regular">05</p>
             <p className="text-[#0053e2] text-xl font-regular">
-              Support to monitor business performance and connect with an
-              Account Manager at least 4 times a week.
+              Help to improve business metrics and avail programs (Flipkart
+              Fulfillment, Smart Fulfillment, Sunday Working and Express
+              Working)
             </p>
           </div>
         </div>
@@ -220,8 +241,8 @@ export default function MarketConnectTab() {
           <div className="block md:flex gap-10 col-span-5 lg:col-span-9">
             <p className="text-white text-2xl font-regular">06</p>
             <p className="text-white text-xl font-regular">
-              Support to monitor business performance and connect with an
-              Account Manager at least 4 times a week.
+              Real-time notifications on Flipkart promotions so you don’t miss
+              out on the best deals.
             </p>
           </div>
         </div>

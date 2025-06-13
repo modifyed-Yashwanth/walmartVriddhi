@@ -58,22 +58,19 @@ const ProgramOpportunitySection = () => {
   const accordionItems = [
     {
       title: "DEVELOP",
-      content: "On-Demand Learning & Personalized Mentoring for MSMEs.",
+      content: "On-Demand Learning & Personalized Mentoring for MSMEs",
     },
     {
       title: "CONNECT",
-      content:
-        "Network with peers, mentors, and industry experts to foster collaborations and partnerships.",
+      content: "Market Access & Onboarding Support with Flipkart Marketplace",
     },
     {
       title: "ENABLE",
-      content:
-        "Access tools, resources, and technologies to streamline operations and enhance productivity.",
+      content: "Oppurtunities to scale businesses on eCommerce platforms",
     },
     {
       title: "GROW",
-      content:
-        "Expand your market reach, explore new opportunities, and scale your business sustainably.",
+      content: "Platforms and networks towards building a thriving business",
     },
   ];
 

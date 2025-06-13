@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -10,6 +10,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import SwiperCore from "swiper";
 import AnimatedSection from "./AnimatedSection";
+import Link from "next/link";
 
 const CourseSection = () => {
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -109,10 +110,10 @@ const CourseSection = () => {
     <AnimatedSection delay={0.3}>
       <div className="py-10 px-4 md:px-12">
         <div className="relative">
-          <div className="flex justify-end mb-4 gap-2 z-50 pointer-events-auto">
+          <div className="absolute top-1/2 -translate-y-1/2 left-[-40px] right-[-40px] flex justify-between z-20 pointer-events-none">
             <button
               ref={prevRef}
-              className="w-20 h-10 rounded-4xl border border-gray-300 hover:border-[#0053e2] flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer group"
+              className="w-10 h-10 rounded-full border border-gray-300 hover:border-[#0053e2] flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer group pointer-events-auto"
               aria-label="Previous slide"
               disabled={isBeginning}
             >
@@ -124,7 +125,7 @@ const CourseSection = () => {
             </button>
             <button
               ref={nextRef}
-              className="w-20 h-10 rounded-4xl border border-gray-300 hover:border-[#0053e2] flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer group"
+              className="w-10 h-10 rounded-full border border-gray-300 hover:border-[#0053e2] flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer group pointer-events-auto"
               aria-label="Next slide"
               disabled={isEnd}
             >
@@ -139,12 +140,16 @@ const CourseSection = () => {
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
             navigation={{
               prevEl: prevRef.current,
               nextEl: nextRef.current,
+            }}
+            autoplay={{
+              delay: 7000,
+              disableOnInteraction: false,
             }}
             onBeforeInit={(swiper) => {
               if (
@@ -160,7 +165,7 @@ const CourseSection = () => {
               768: { slidesPerView: 2, spaceBetween: 24 },
               1024: { slidesPerView: 4, spaceBetween: 24 },
             }}
-            className="courses-swiper py-[50px]"
+            className="courses-swiper py-[50px] px-12"
           >
             {courses.map((course, index) => (
               <SwiperSlide
@@ -188,6 +193,15 @@ const CourseSection = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="mx-auto text-center mt-2">
+            <Link
+              href={"https://supplieracademy.northpass.com/app"}
+              target="_blank"
+              className="text-[#0053e2] hover:underline"
+            >
+              Join the Walmart Supplier Academy today
+            </Link>
+          </div>
         </div>
       </div>
     </AnimatedSection>

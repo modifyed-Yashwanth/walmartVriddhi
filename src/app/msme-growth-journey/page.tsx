@@ -40,16 +40,17 @@ export default function Page() {
         <div className="relative w-full overflow-hidden space-y-6 sm:space-y-10 md:space-y-14 py-10">
           <div className="grid grid-cols-1 lg:grid-cols-10 gap-5 md:gap-10">
             <div className="md:col-span-5">
-              <h2 className="text-2xl md:text-4xl">Walmart Vriddhi</h2>
+              <h2 className="text-2xl md:text-4xl">MSME Growth Journey</h2>
             </div>
             <div className="md:col-span-5 flex items-center">
               <div className="flex flex-col justify-between h-full">
                 <p>
-                  Walmart and Flipkart have made a long-term commitment to
-                  transform India&apos;s MSME ecosystem by empowering 50,000
-                  MSMEs. We strive to play a catalytic role by supporting small
-                  businesses with growth opportunities to reach greater heights
-                  and new markets.
+                  The Walmart Vriddhi Supplier Development empowers MSMEs to
+                  participate in digital commerce by supporting their onboarding
+                  onto platforms such as Flipkart and the Walmart Marketplace
+                  (Walmart.com). This helps MSMEs access both national and
+                  international markets to Make in India for India and the
+                  world.
                 </p>
               </div>
             </div>

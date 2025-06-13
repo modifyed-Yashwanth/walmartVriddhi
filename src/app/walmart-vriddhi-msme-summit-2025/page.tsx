@@ -28,8 +28,8 @@ function page() {
           </div>
           <p className="text-center">
             <SecondaryButton
-              text="Register for MSME Summit"
-              className={`w-full sm:w-[220px] md:w-[260px] bg-[#0053e2] text-white border-[#0053e2] mt-6 mx-auto`}
+              text="Register for Walmart Vriddhi MSME Summit 2025"
+              className={`w-full  bg-[#0053e2] text-white border-[#0053e2] mt-6 mx-auto`}
               onClick={() => {
                 window.open(
                   "https://taffexperience.com/msme-summit-2025/",

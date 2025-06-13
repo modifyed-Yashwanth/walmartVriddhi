@@ -192,7 +192,7 @@ function page() {
         <div className="relative w-full overflow-hidden my-6 md:my-10">
           <h2 className="text-2xl md:text-4xl mb-2">Courses & Eligibility</h2>
           <div className="mb-10">
-            The eligibility criteria includes:&nbsp; &nbsp;
+            The eligibility criteria includes&nbsp; &nbsp;
             <p className="inline-block md:inline-flex items-center gap-3">
               <span>Import Export Code (IC)</span>{" "}
               <span className="text-[#0053e2]">|</span>
@@ -264,8 +264,8 @@ function page() {
             <div className="text-white max-w-full md:max-w-lg lg:max-w-[50%]">
               <div>
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 leading-normal">
-                  Complete a minimum of five learning modules​​ to be eligible
-                  to sell on Walmart Marketplace
+                  Complete Walmart Vriddhi learning modules to be eligible to
+                  see on Walmart Marketplace
                 </h2>
                 <a
                   href="https://seller.walmart.com/signup?q=&origin=marketing_campaign&src=TestIndiaCampaign_Vriddhi&exp=MjAyNS0wMy0xNA=="

@@ -5,42 +5,35 @@ import { SecondaryButton } from "./buttons";
 const initialCards = [
   {
     icon: "/images/b2b-icon.svg",
-    title: "Success Factors for B2B eCommerce",
-    bg: "bg-[#A9DDF7]",
-    color: "text-[#001E60]",
-    bottomBg: "bg-[#A9DDF7]",
-  },
-  {
-    icon: "/images/Supply-Chain-icon.svg",
-    title: "Supply Chain Management - Elements and Digitization",
+    title: "Success Factors for E-Commerce B2B",
     bg: "bg-[#4DBDF5]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#4DBDF5]",
   },
   {
-    icon: "/images/Market-icon.svg",
-    title: "Market Intelligence",
+    icon: "/images/Supply-Chain-icon.svg",
+    title: "Advanced Supply Chain Management",
     bg: "bg-[#0053E2]",
     color: "text-white",
     bottomBg: "bg-[#0053E2]",
   },
   {
-    icon: "/images/Responsible-icon.svg",
-    title: "Risk and Legal Responsible Sourcing",
+    icon: "/images/Market-icon.svg",
+    title: "Market Intelligence",
     bg: "bg-[#A9DDF7]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#A9DDF7]",
   },
   {
     icon: "/images/LEAN-icon.svg",
-    title: "LEAN Manufacturing",
+    title: "Lean Manufacturing",
     bg: "bg-[#4DBDF5]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#4DBDF5]",
   },
   {
     icon: "/images/eCommerce-icon.svg",
-    title: "Success Factors for B2C eCommerce",
+    title: "Success Factors for E-Commerce B2C",
     bg: "bg-[#0053E2]",
     color: "text-white",
     bottomBg: "bg-[#0053E2]",
@@ -53,67 +46,60 @@ const initialCards = [
     bottomBg: "bg-[#A9DDF7]",
   },
   {
-    icon: "/images/Business Case 1.svg",
-    title: "Business Case",
+    icon: "/images/Global Sourcing.svg",
+    title: "Global Sourcing",
     bg: "bg-[#4DBDF5]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#4DBDF5]",
+  },
+  {
+    icon: "/images/Business Case 1.svg",
+    title: "Business Case",
+    bg: "bg-[#0053E2]",
+    color: "text-white",
+    bottomBg: "bg-[#0053E2]",
   },
   {
     icon: "/images/Product Development.svg",
     title: "Product Development",
-    bg: "bg-[#0053E2]",
-    color: "text-white",
-    bottomBg: "bg-[#0053E2]",
-  },
-  {
-    icon: "/images/Advanced Marketing.svg",
-    title: "Advanced Marketing",
     bg: "bg-[#A9DDF7]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#A9DDF7]",
-  },
-  {
-    icon: "/images/Data-Based Performance Management.svg",
-    title: "Data-Based Performance Management",
-    bg: "bg-[#4DBDF5]",
-    color: "text-[#001E60]",
-    bottomBg: "bg-[#4DBDF5]",
   },
   {
     icon: "/images/Demand Forecasting.svg",
     title: "Demand Forecasting",
-    bg: "bg-[#0053E2]",
-    color: "text-white",
-    bottomBg: "bg-[#0053E2]",
-  },
-  {
-    icon: "/images/procurement.svg",
-    title: "Procurement",
-    bg: "bg-[#A9DDF7]",
-    color: "text-[#001E60]",
-    bottomBg: "bg-[#A9DDF7]",
-  },
-  {
-    icon: "/images/Managing your Finances.svg",
-    title: "Managing your Finances",
     bg: "bg-[#4DBDF5]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#4DBDF5]",
   },
   {
-    icon: "/images/Advanced Financing.svg",
-    title: "Advanced Financing",
+    icon: "/images/procurement.svg",
+    title: "Procurement",
     bg: "bg-[#0053E2]",
     color: "text-white",
     bottomBg: "bg-[#0053E2]",
   },
   {
-    icon: "/images/Women in Business.svg",
-    title: "Women in Business",
+    icon: "/images/Managing your Finances.svg",
+    title: "Managing Your Finances",
     bg: "bg-[#A9DDF7]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#A9DDF7]",
+  },
+  {
+    icon: "/images/Advanced Financing.svg",
+    title: "Advanced Finance",
+    bg: "bg-[#4DBDF5]",
+    color: "text-[#001E60]",
+    bottomBg: "bg-[#4DBDF5]",
+  },
+  {
+    icon: "/images/Women in Business.svg",
+    title: "Women Owned Businesses",
+    bg: "bg-[#0053E2]",
+    color: "text-white",
+    bottomBg: "bg-[#0053E2]",
   },
 ];
 
@@ -157,7 +143,7 @@ export default function LearningAdvancedBusinessTab() {
                     src={card.icon}
                     height={35}
                     width={35}
-                    alt="SWOT"
+                    alt={card.title}
                     className="mx-auto absolute inset-0 top-5"
                   />
                 </div>
@@ -178,7 +164,7 @@ export default function LearningAdvancedBusinessTab() {
             <SecondaryButton
               onClick={handleLoadMore}
               text="Load more"
-              className="w-[120px] text-semibold bg-white "
+              className="w-[120px] text-semibold bg-white"
             />
           </div>
         )}

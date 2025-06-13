@@ -9,6 +9,7 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchResourceHub } from "@/services/resourceHubService";
 import MobileResourceSelect from "@/components/MobileResourceSelect";
 import AnimatedSection from "@/components/AnimatedSection";
+import Seo from "@/components/misc/Seo";
 
 interface ResourceHubPost {
   id: number;
@@ -64,6 +65,24 @@ export default function Page() {
 
   return (
     <>
+      <Seo
+        title="Resource Hub - Walmart Vriddhi"
+        description="Access tools, guides, and programs to help Indian MSMEs sell online, scale exports, adopt digital payments, and grow with Walmart Vriddhi."
+        url="https://walmart-vriddhi.vercel.app/resource-hub"
+        image="/favicon/android-chrome-192x192.png"
+        structuredData={{
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          name: "walmartvriddhi",
+          url: "https://www.walmartvriddhi.org/",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: "https://www.walmartvriddhi.org/{search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
+        }}
+      />
+
       {/* Hero Section */}
       <AnimatedSection>
         <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-lg overflow-hidden">

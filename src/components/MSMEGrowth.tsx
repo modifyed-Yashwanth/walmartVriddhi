@@ -8,33 +8,28 @@ import StaggeredAnimatedSection from "./StaggeredAnimatedSection";
 const features = [
   {
     id: 1,
-    icon: "/images/learning-icon.svg",
-    title: "Learning",
-    description: "Gain the knowledge you need to grow.",
+    icon: "/images/market-connect.svg",
+    title: "Market Connect",
   },
   {
     id: 2,
-    icon: "/images/market-connect.svg",
-    title: "Market Connect",
-    description: "Take your business to new heights online.",
+    icon: "/images/learning-icon.svg",
+    title: "On-Demand Learning",
   },
   {
     id: 3,
-    icon: "/images/personalized-mentoring.svg",
-    title: "Personalized Mentoring",
-    description: "Start your journey with foundational e-commerce skills.",
+    icon: "/images/Registration.svg",
+    title: "Registration",
   },
   {
     id: 4,
-    icon: "/images/business-fundamentals.svg",
-    title: "Business Fundamentals",
-    description: "Gain the knowledge you need to grow.",
+    icon: "/images/personalized-mentoring.svg",
+    title: "Personalized Mentoring",
   },
   {
     id: 5,
-    icon: "/images/advanced-business.svg",
-    title: "Advanced Business",
-    description: "Start your journey with foundational e-commerce skills.",
+    icon: "/images/Enablement Support.svg",
+    title: "Enablement Support",
   },
 ];
 
@@ -48,14 +43,9 @@ export default function MSMEGrowth() {
           staggerDelay={0.2}
         >
           <p className="md:text-xl mb-2">5 Simple Steps for You</p>
-          <h2 className="text-2xl md:text-4xl mb-4">
-            Unlock Your Potential with Our Training
+          <h2 className="text-2xl md:text-4xl mb-4 capitalize">
+            a giant leap for your business
           </h2>
-          <p className="max-w-3xl mx-auto">
-            Our training modules are designed to empower MSMEs with essential
-            skills for online success. Explore a range of topics tailored to
-            help you thrive in the digital marketplace.
-          </p>
         </StaggeredAnimatedSection>
 
         {/* Features Grid */}
@@ -75,7 +65,6 @@ export default function MSMEGrowth() {
                   className="mx-auto mb-4"
                 />
                 <h3 className="text-xl mb-2">{feature.title}</h3>
-                <p className="text-sm">{feature.description}</p>
               </div>
             ))}
           </StaggeredAnimatedSection>
@@ -106,7 +95,6 @@ export default function MSMEGrowth() {
                   className="mx-auto mb-4"
                 />
                 <h3 className="text-xl mb-2">{feature.title}</h3>
-                <p className="text-sm">{feature.description}</p>
               </div>
             ))}
           </StaggeredAnimatedSection>
@@ -126,7 +114,6 @@ export default function MSMEGrowth() {
               className="mx-auto mb-4"
             />
             <h3 className="text-xl mb-2">{features[4].title}</h3>
-            <p className="mb-6 text-sm">{features[4].description}</p>
             <SecondaryButton href="/msme-growth-journey" text="View More" />
           </div>
         </StaggeredAnimatedSection>

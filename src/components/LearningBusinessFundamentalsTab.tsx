@@ -4,36 +4,29 @@ import { SecondaryButton } from "./buttons";
 
 const initialCards = [
   {
-    icon: "/images/Channel-Based Costing.svg",
-    title: "Channel-Based Costing",
-    bg: "bg-[#A9DDF7]",
-    color: "text-[#001E60]",
-    bottomBg: "bg-[#A9DDF7]",
-  },
-  {
-    icon: "/images/Introduction to Supply Chain.svg",
-    title: "Introduction to Supply Chain",
-    bg: "bg-[#4DBDF5]",
-    color: "text-[#001E60]",
-    bottomBg: "bg-[#4DBDF5]",
-  },
-  {
-    icon: "/images/Pitch and Customer Value Proposition.svg",
-    title: "Pitch and Customer Value Proposition",
+    icon: "/images/business-fundamentals.svg",
+    title: "Business Fundamentals - Markets",
     bg: "bg-[#0053E2]",
     color: "text-white",
     bottomBg: "bg-[#0053E2]",
   },
   {
-    icon: "/images/Digital Enablement (1).svg",
-    title: "Digital Enablement",
+    icon: "/images/Supply-Chain-icon.svg",
+    title: "Introduction to Supply Chain Management",
     bg: "bg-[#A9DDF7]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#A9DDF7]",
   },
   {
-    icon: "/images/MSME Response to Covid-19.svg",
-    title: "MSME Response to Covid-19",
+    icon: "/images/Pitch and Customer Value Proposition.svg",
+    title: "Pitch and Customer Value",
+    bg: "bg-[#4DBDF5]",
+    color: "text-[#001E60]",
+    bottomBg: "bg-[#4DBDF5]",
+  },
+  {
+    icon: "/images/Digital Enablement.svg",
+    title: "Digital Enablement",
     bg: "bg-[#4DBDF5]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#4DBDF5]",
@@ -41,23 +34,23 @@ const initialCards = [
   {
     icon: "/images/Raising Capital and Leveraging Support.svg",
     title: "Raising Capital and Leveraging Support",
-    bg: "bg-[#0053E2]",
-    color: "text-white",
-    bottomBg: "bg-[#0053E2]",
+    bg: "bg-[#4DBDF5]",
+    color: "text-[#001E60]",
+    bottomBg: "bg-[#4DBDF5]",
   },
   {
     icon: "/images/Innovation.svg",
     title: "Innovation",
-    bg: "bg-[#A9DDF7]",
-    color: "text-[#001E60]",
-    bottomBg: "bg-[#A9DDF7]",
-  },
-  {
-    icon: "/images/Trade Promotions and Visual Merchandising.svg",
-    title: "Trade Promotions and Visual Merchandising",
     bg: "bg-[#4DBDF5]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#4DBDF5]",
+  },
+  {
+    icon: "/images/Marketing Promotions and Visual Merchandising.svg",
+    title: "Marketing Promotions and Visual Merchandising",
+    bg: "bg-[#0053E2]",
+    color: "text-white",
+    bottomBg: "bg-[#0053E2]",
   },
   {
     icon: "/images/Workforce Motivation.svg",
@@ -69,37 +62,37 @@ const initialCards = [
   {
     icon: "/images/Way Forward Strategy.svg",
     title: "Way Forward Strategy",
-    bg: "bg-[#A9DDF7]",
-    color: "text-[#001E60]",
-    bottomBg: "bg-[#A9DDF7]",
-  },
-  {
-    icon: "/images/Cost Competitiveness.svg",
-    title: "Cost Competitiveness",
-    bg: "bg-[#4DBDF5]",
-    color: "text-[#001E60]",
-    bottomBg: "bg-[#4DBDF5]",
-  },
-  {
-    icon: "/images/Risk and Legal Responsible Sourcing.svg",
-    title: "Risk and Legal Responsible Sourcing",
     bg: "bg-[#0053E2]",
     color: "text-white",
     bottomBg: "bg-[#0053E2]",
   },
   {
-    icon: "/images/Marketing.svg",
-    title: "Marketing",
+    icon: "/images/Cost Competitiveness.svg",
+    title: "Cost Competitiveness",
+    bg: "bg-[#0053E2]",
+    color: "text-white",
+    bottomBg: "bg-[#0053E2]",
+  },
+  {
+    icon: "/images/Introduction to Legal and Compliance.svg",
+    title: "Introduction to Legal and Compliance",
     bg: "bg-[#A9DDF7]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#A9DDF7]",
   },
   {
-    icon: "/images/Basics of Finance.svg",
-    title: "Basics of Finance",
+    icon: "/images/Marketing.svg",
+    title: "Introduction to Marketing",
     bg: "bg-[#4DBDF5]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#4DBDF5]",
+  },
+  {
+    icon: "/images/Basics of Finance.svg",
+    title: "Introduction to Finance",
+    bg: "bg-[#0053E2]",
+    color: "text-white",
+    bottomBg: "bg-[#0053E2]",
   },
 ];
 
@@ -118,10 +111,10 @@ export default function LearningBusinessFundamentalsTab() {
     <>
       <div className="mt-10 space-y-14">
         <p className="max-w-6xl mx-auto">
-          The program helps you gain a foundational understanding of business
-          management, with a special focus on the global shift towards
-          eCommerce. Frameworks and established theories will guide you on how
-          to modernise and expand your businesses.
+          The program offers a strong foundation in business management, with
+          emphasis on the growing importance of eCommerce. Using proven
+          frameworks and established theories, it guides on ways to modernize
+          and scale businesses.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
@@ -143,7 +136,7 @@ export default function LearningBusinessFundamentalsTab() {
                     src={card.icon}
                     height={35}
                     width={35}
-                    alt="SWOT"
+                    alt={card.title}
                     className="mx-auto absolute inset-0 top-3"
                   />
                 </div>
