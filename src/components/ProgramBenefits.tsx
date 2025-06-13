@@ -1,14 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import AnimatedSection from "./AnimatedSection";
 import StaggeredAnimatedSection from "./StaggeredAnimatedSection";
 
 interface ProgramBenefitsProps {
-  title: string;
-  subtitle: string;
-  description: string;
   benefits: benefitsProps[];
 }
 
@@ -18,23 +15,34 @@ interface benefitsProps {
   description: string;
 }
 
-const ProgramBenefits = ({
-  title,
-  subtitle,
-  description,
-  benefits,
-}: ProgramBenefitsProps) => {
+const ProgramBenefits = ({ benefits }: ProgramBenefitsProps) => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <AnimatedSection delay={0.3}>
       <div className="py-10">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 lg:gap-15 mb-12">
           <div className="md:w-1/2">
-            <h4 className="md:text-lg mb-2">{subtitle}</h4>
-            <h2 className="text-2xl md:text-4xl">{title}</h2>
+            <h2 className="text-2xl md:text-4xl">Program Benefits</h2>
           </div>
           <div className="md:w-1/2 text-base leading-relaxed">
-            <p>{description}</p>
+            <p className="mb-[10px]">
+              Walmart Vriddhi is a free-of-cost supplier development program for MSMEs that combine digital learning with business tools to empower entrepreneurs across India to modernize, scale, and grow their businesses.
+            </p>
+            {showMore && (
+              <>
+              <p className="mb-[10px]">
+               The program was launched in 2019 with a commitment to empower 50,000 MSMEs in India over five years. In its first phase, the program surpassed that goal by training over 60,000 MSMEs and has played a catalytic role in supporting small businesses with growth opportunities to reach new national and international markets.</p>
+               <p>The program is tailored to help MSMEs modernize, scale and meet their domestic, and (for some) international ambitions. It underscores Walmart’s focus to help unlock India’s entrepreneurial capacity and enable MSMEs to thrive in the market. The program offers MSMEs access to free-of-cost training, mentoring, and business advice. 
+              </p>
+              </>
+            )}
+            <button
+              onClick={() => setShowMore(!showMore)}
+              className="underline text-[#0053E2] cursor-pointer text-left"
+            >
+              {showMore ? "Read less" : "Read more"}
+            </button>
           </div>
         </div>
 
@@ -58,7 +66,7 @@ const ProgramBenefits = ({
                 />
               </div>
               <h3 className="font-medium text-lg mb-2">{benefit.title}</h3>
-              <p className="text-sm">{benefit.description}</p>
+              {/* <p className="text-sm">{benefit.description}</p> */}
             </div>
           ))}
         </StaggeredAnimatedSection>

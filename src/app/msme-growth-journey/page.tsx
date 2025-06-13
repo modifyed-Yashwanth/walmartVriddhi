@@ -19,17 +19,17 @@ export default function Page() {
       <AnimatedSection>
         <div className="relative h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
           <Image
-            src="/images/MSME-Growth-Journey-Banner.jpg"
+            src="/images/Marketplace-Bannerv2.jpg"
             alt="success stories hero image"
             className="object-cover"
             fill
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r w-full md:w-[65%] lg:w-[50%] from-black/80 from-40% opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-r w-full md:w-[65%] lg:w-[50%] from-black/0 from-40% opacity-60" />
           <div className="absolute inset-0 flex items-center">
             <div className="px-4 sm:px-8 md:px-12 lg:left-12 max-w-full md:max-w-lg lg:max-w-xl text-white">
               <h1 className="text-2xl sm:text-3xl md:text-[38px] font-bold mb-2 leading-tight">
-                MSME Growth Journey
+                {/* MSME Growth Journey */}
               </h1>
             </div>
           </div>
