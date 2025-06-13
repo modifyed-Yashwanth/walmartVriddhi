@@ -169,7 +169,7 @@ export default function Page() {
                       }}
                     />
                     <div
-                      className="text-sm resource-link"
+                      className="text-sm resource-link space-y-2"
                       dangerouslySetInnerHTML={{
                         __html: resource.content.rendered,
                       }}

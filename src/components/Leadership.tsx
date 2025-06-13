@@ -29,7 +29,7 @@ function Leadership() {
               >
                 {/* ✅ FIXED: Not using `fill`, using width + height */}
                 <Image
-                  src="/images/leadership-thumbnail.png"
+                  src="/images/vriddhi_website_announcement_v4_(hindi_cc).jpg"
                   alt="Leadership Video Thumbnail"
                   width={1280}
                   height={720}
