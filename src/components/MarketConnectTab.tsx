@@ -124,7 +124,7 @@ export default function MarketConnectTab() {
           {/* Icon Box */}
           <div className="rounded-xl mb-3 md:mb-0 col-span-5 md:col-span-3">
             <Image
-              src="/images/sqaure-box-icon.svg"
+              src="/images/Card 1.svg"
               alt="Vector icon"
               width={55}
               height={40}
@@ -145,7 +145,7 @@ export default function MarketConnectTab() {
           {/* Icon Box */}
           <div className="rounded-xl mb-3 md:mb-0 col-span-5 md:col-span-3">
             <Image
-              src="/images/sqaure-box-icon.svg"
+              src="/images/Card 2.svg"
               alt="Vector icon"
               width={55}
               height={40}
@@ -165,7 +165,7 @@ export default function MarketConnectTab() {
           {/* Icon Box */}
           <div className="rounded-xl mb-3 md:mb-0 col-span-5 md:col-span-3">
             <Image
-              src="/images/sqaure-box-white-icon.svg"
+              src="/images/Card 3.svg"
               alt="Vector icon"
               width={55}
               height={40}
@@ -186,7 +186,7 @@ export default function MarketConnectTab() {
           {/* Icon Box */}
           <div className="rounded-xl mb-3 md:mb-0 col-span-5 md:col-span-3">
             <Image
-              src="/images/sqaure-box-icon.svg"
+              src="/images/Card 4.svg"
               alt="Vector icon"
               width={55}
               height={40}
@@ -207,7 +207,7 @@ export default function MarketConnectTab() {
           {/* Icon Box */}
           <div className="rounded-xl mb-3 md:mb-0 col-span-5 md:col-span-3">
             <Image
-              src="/images/sqaure-box-icon.svg"
+              src="/images/Card 5.svg"
               alt="Vector icon"
               width={55}
               height={40}
@@ -229,7 +229,7 @@ export default function MarketConnectTab() {
           {/* Icon Box */}
           <div className="rounded-xl mb-3 md:mb-0 col-span-5 md:col-span-3">
             <Image
-              src="/images/sqaure-box-white-icon.svg"
+              src="/images/Card 6.svg"
               alt="Vector icon"
               width={55}
               height={40}

@@ -41,14 +41,6 @@ const Footer = () => {
                   </li>
                   <li className="m-0">
                     <Link
-                      href={"/msme-growth-journey"}
-                      className="hover:text-[#0053E2]"
-                    >
-                      MSME Growth Journey
-                    </Link>
-                  </li>
-                  <li className="m-0">
-                    <Link
                       href={"/walmart-vriddhi-msme-summit-2024"}
                       className="hover:text-[#0053E2]"
                     >

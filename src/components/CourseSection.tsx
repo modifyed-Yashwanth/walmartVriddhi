@@ -199,7 +199,7 @@ const CourseSection = () => {
               target="_blank"
               className="text-[#0053e2] hover:underline"
             >
-              Join the Walmart Supplier Academy today
+              Join the Walmart Supplier Academy
             </Link>
           </div>
         </div>
