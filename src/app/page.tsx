@@ -52,9 +52,7 @@ export default function Home() {
           <MSMEGrowth />
           <Leadership />
           <ProgramOpportunitySection />
-          <ProgramBenefits
-            benefits={benefitsData.benefits}
-          />
+          <ProgramBenefits benefits={benefitsData.benefits} />
           {/* <ImpactReach />
           <MSMEGraduates />
           <InfrastructureDelivery /> */}

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { PrimaryButton } from "./buttons";
+import { PrimaryButton, SecondaryButton } from "./buttons";
 import { BannerSliderProps } from "@/types/types";
 import Link from "next/link";
 import AnimatedSection from "./AnimatedSection";
@@ -52,11 +52,13 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
               {index === 0 ? (
                 <div className="absolute inset-0 px-4 md:px-8 hidden md:flex flex-col justify-center items-center h-full w-full pb-8 pr-8 top-[35%] left-[15%] z-20">
                   {/* {slide.overlay && ( */}
-                    <Link
-                      href={slide.slide_link}
-                      className="bg-white text-[#0053e2] px-[24px] py-[10px] font-[600] rounded-full min-w-[200px] w-max transition-all text-[14px] leading-[18px] cursor-pointer text-center"
-                      target="_blank"
-                    >Register for Walmart Vriddhi MSME Summit 2025</Link>
+                  <SecondaryButton
+                    href={slide.slide_link}
+                    className="bg-white text-[#0053e2] px-[24px] py-[10px] rounded-full min-w-[200px] w-max transition-all text-[14px] leading-[18px] cursor-pointer text-center"
+                    target="_blank"
+                    text="Register for Walmart Vriddhi MSME Summit 2025"
+                  />
+
                   {/* )} */}
                 </div>
               ) : (

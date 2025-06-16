@@ -98,7 +98,7 @@ export default function FAQPage() {
               <SecondaryButton
                 key={tab}
                 text={tab}
-                className={`h-[48px] min-w-[350px] text-sm md:text-base whitespace-normal text-center ${
+                className={`h-[48px] min-w-[350px] text-sm md:text-base whitespace-normal text-center lg:font-[400] ${
                   activeTab === tab ? "bg-[#0053e2] text-white" : ""
                 }`}
                 onClick={() => setActiveTab(tab)}

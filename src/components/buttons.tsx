@@ -20,7 +20,7 @@ export const PrimaryButton = ({
   return (
     <button
       className={clsx(
-        `px-[24px] py-[10px] font-[600] rounded-full min-w-[200px] w-max transition-all text-[14px] leading-[18px] bg-[#0053e2] shadow text-center cursor-pointer`,
+        `px-[24px] py-[10px] font-[400] rounded-full min-w-[200px] w-max transition-all text-[14px] leading-[18px] bg-[#0053e2] shadow text-center cursor-pointer`,
         className
       )}
       onClick={onClick}
@@ -42,7 +42,7 @@ export const SecondaryButton = ({
   const isBlueButton = className?.includes("bg-[#0053e2]");
 
   const baseClasses =
-    "px-[24px] py-[10px] font-[600] rounded-full min-w-[200px] w-max transition-all text-[14px] leading-[18px] cursor-pointer text-[#2E2F32] text-center";
+    "px-[24px] py-[10px] font-[400] rounded-full min-w-[200px] w-max transition-all text-[14px] leading-[18px] cursor-pointer text-[#2E2F32] text-center";
 
   const combinedClasses = clsx(
     baseClasses,

@@ -15,7 +15,7 @@ function SuccessNarrativeCard({
 }: SuccessNarrativeCardProps) {
   const decodedTitle = he.decode(title);
   return (
-    <Card className="flex flex-col lg:flex-row h-full lg:h-[220px] w-full overflow-hidden justify-start text-start">
+    <Card className="flex flex-col lg:flex-row h-full lg:h-[220px] w-full overflow-hidden justify-start text-start min-h-[280px]">
       {/* Image (full width on mobile, 40% on desktop) */}
       <div className="w-full sm:w-[50%] md:w-[100%] lg:w-[50%] sm:h-full relative">
         <Image
