@@ -111,7 +111,7 @@ const ProgramOpportunitySection = () => {
               alt="Program Opportunity"
               width={600} // required in next/image
               height={600} // required in next/image
-              className="rounded-xl object-cover  max-h-[600px] max-w-[600px]"
+              className="rounded-xl object-cover w-full max-h-[600px] max-w-[600px]"
             />
           </div>
         </div>
