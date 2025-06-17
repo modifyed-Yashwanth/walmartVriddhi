@@ -57,8 +57,8 @@ function Summit2025() {
               </ul>
               <p className="text-xl pt-2"><strong>Explore More</strong></p>
               <ul>
-                <li><strong>Flipkart Interactive Kiosk:</strong> On-ground support to help MSMEs onboard and grow as digital sellers</li>
-                <li><strong>Walmart Vriddhi Stories Film:</strong> A tribute to the inspiring journeys of small businesses from across the country</li>
+                <li><strong>Flipkart Interactive Kiosk -</strong> On-ground support to help MSMEs onboard and grow as digital sellers</li>
+                <li><strong>Walmart Vriddhi Stories Film -</strong> A tribute to the inspiring journeys of small businesses from across the country</li>
               </ul>
               <p className="text-xl pt-2"><strong>Register Now</strong></p>
               <p>Be part of this dynamic platform to learn, connect, and celebrate the future of India’s MSMEs.</p>

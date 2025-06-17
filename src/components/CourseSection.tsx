@@ -100,7 +100,7 @@ const CourseSection = () => {
       image: "/images/courses/card7.jpg",
     },
     {
-      id: 7,
+      id: 8,
       title: "FInancial & Forex Management",
       image: "/images/courses/card8.jpg",
     },
