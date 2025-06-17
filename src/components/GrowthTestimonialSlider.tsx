@@ -164,9 +164,9 @@ function GrowthTestimonialSlider() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="p-2 font-thin text-sm text-center flex flex-col justify-between w-full">
+            <div className="p-2 text-sm text-center flex flex-col justify-between w-full">
               <p
-                className="text-base text-gray-800 mb-4"
+                className="mb-4"
                 title={testimonial.quote}
               >
                 {testimonial.quote}

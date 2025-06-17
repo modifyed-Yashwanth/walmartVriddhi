@@ -227,7 +227,7 @@ function page() {
 
             {/* Text */}
             <p className="text-[#0053e2] text-xl font-regular">
-              Impactful advertising &amp; marketing campaigns via Walmart
+              Impactful advertising and marketing campaigns via Walmart
               Connect
             </p>
           </div>
@@ -246,7 +246,7 @@ function page() {
             {/* Text */}
             <p className="text-[#0053e2] text-xl font-regular">
               Insights on U.S. customers, global supply chain best practices
-              &amp; business strategies
+              and business strategies
             </p>
           </div>
         </div>
@@ -271,7 +271,7 @@ function page() {
                 <SecondaryButton
                   href="https://seller.walmart.com/signup?q=&origin=marketing_campaign&src=TestIndiaCampaign_Vriddhi&exp=MjAyNS0wMy0xNA=="
                   target="_blank"
-                  text="Register on the Walmart Seller Center"
+                  text="Register to sell on Walmart Marketplace"
                 />
               </div>
             </div>

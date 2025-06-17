@@ -12,7 +12,7 @@ const PartnersSection = () => {
           <div className="mx-auto my-[35px] max-w-[1500px] px-4 md:px-15">
             <div className="flex flex-col lg:flex-row justify-between items-center">
               <div className="flex flex-col md:flex-row items-center justify-center">
-                <p className="m-0 md:me-4">In association with</p>
+                <p className="m-0 md:me-4">In Association With</p>
                 <Image
                   src="/images/Flipkart-logo.png"
                   alt="i2i logo"

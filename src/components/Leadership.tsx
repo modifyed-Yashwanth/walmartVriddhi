@@ -16,8 +16,8 @@ function Leadership() {
           className="flex flex-col items-center"
           staggerDelay={0.2}
         >
-          <p className="md:text-xl mb-2">Know More About Us</p>
-          <h2 className="text-2xl md:text-4xl">Leadership Video</h2>
+          <p className="md:text-xl mb-2"></p>
+          <h2 className="text-2xl md:text-4xl">Know More About Us</h2>
         </StaggeredAnimatedSection>
 
         <div className="mt-4 md:mt-10 w-full lg:px-30">
