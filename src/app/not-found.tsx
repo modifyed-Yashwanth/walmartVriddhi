@@ -6,8 +6,8 @@ export default function NotFound() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center justify-center mx-38">
-        <div className="flex-grow flex gap-x-40 justify-between items-center mx-12 mt-6">
+      <div className="flex flex-col items-center justify-center mx-38 py-10">
+        <div className="flex-grow flex gap-x-40 justify-between items-center mx-12 mt-20">
           <div className="flex flex-col items-center justify-between">
             <h1 className="text-[220px] font-extrabold text-[#0053e2]">404</h1>
             <p className="text-[30px] font-normal text-[#0053e2]">

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Disallow: /
+
+# Host
+Host: https://walmart-vriddhi-ybmx.vercel.app
+
+# Sitemaps
+Sitemap: https://walmart-vriddhi-ybmx.vercel.app/sitemap.xml
