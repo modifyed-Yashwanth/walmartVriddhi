@@ -77,8 +77,8 @@ export default function PersonalizedMentoringTab() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-10 lg:mt-20 w-full">
             <div className="md:col-span-6 items-center">
-              <div className="space-y-6 p-6 rounded-lg shadow-md">
-                <div className="grid grid-cols-1 md:grid-cols-10 gap-10 py-6">
+              <div className="space-y-6 py-6 px-6 lg:px-0 rounded-lg shadow-md">
+                <div className="grid grid-cols-1 md:grid-cols-10 gap-10 py-6 lg:px-10">
                   <div className="md:col-span-5">
                     <Image
                       src="/images/100-Days.svg"
