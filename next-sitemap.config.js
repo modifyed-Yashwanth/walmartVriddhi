@@ -1,12 +1,12 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://walmart-vriddhi-ybmx.vercel.app',
+  siteUrl: 'https://www.walmartvriddhi.org',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
       {
         userAgent: '*',
-        disallow: '/',
+        allow: '/',
       },
     ]
   },
