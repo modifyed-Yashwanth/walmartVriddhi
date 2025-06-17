@@ -238,14 +238,14 @@ are no provisions for loans or grants for participants.`,
       "Is there an opportunity for international expansion as cross-border sellers on Walmart Marketplace?",
     answer: `Walmart offers manufacturers in India an opportunity for international expansion as cross-
 border sellers on Walmart Marketplace.
- At the grassroots level, Walmart and Flipkart provide training and support to MSMEs with
+At the grassroots level, Walmart and Flipkart provide training and support to MSMEs with
 export ambitions via the Walmart Vriddhi supplier development program. A cross-border
 trade training program is also available to help sellers prepare to begin leveraging the digital
 supply chain to sell overseas.
- Indian sellers on Walmart Marketplace will be guided every step of the way by a Walmart
+Indian sellers on Walmart Marketplace will be guided every step of the way by a Walmart
 Cross Border Trade team in India. Sellers will have a dedicated account manager to help
 them onboard and take advantage of tools like Walmart Fulfilment Services (WFS).
-o WFS lets sellers offer two-day delivery to most of the U.S., with Walmart handling
+WFS lets sellers offer two-day delivery to most of the U.S., with Walmart handling
 warehousing and delivery, as well as returns. Sellers in India will also be able to use
 the Walmart Connect media platform to help run impactful advertising and marketing
 campaigns.`,
@@ -261,14 +261,14 @@ productivity, and profitability, while offering ongoing support and tools to sta
 market trends and best practices.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question:
       "Who can I contact regarding my registration status or onboarding issues with Flipkart?",
     answer: `You can contact Flipkart Seller Support by raising a ticket through the Seller Hub or by emailing
 enablement.vriddhi@ttcglocal.com with your registered details and query.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "Is there ongoing support after completing the program?",
     answer: `Yes, participants continue to receive guidance through network support and mentorship opportunities
 even after completing their initial training. Further, MSMEs can seek support through our
@@ -276,7 +276,7 @@ Enablement team, which runs daily live sessions to address MSME questions like p
 listing etc.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question:
       "Does Walmart Vriddhi support women-led businesses and enterprises?",
     answer: `Yes, the program has so far empowered over 10,000 women-led businesses and enterprises
@@ -285,7 +285,7 @@ three years, we will further empower 15,000 more women-led businesses to success
 businesses on e-commerce platforms.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question:
       "Where can I find more detailed information about the program milestones and upcoming training sessions?",
     answer: `Detailed information on program milestones, upcoming training schedules, and webinars can be
@@ -294,7 +294,7 @@ program activities and successes. To know more, please visit this link:
 https://www.walmartvriddhi.org`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question:
       "Are there success stories or case studies available from past participants?",
     answer: `Yes, the Walmart Vriddhi website features success stories and testimonials from MSMEs that have
@@ -304,7 +304,7 @@ into the potential benefits of participating in the initiative. To read these st
 please visit this link: https://www.walmartvriddhi.org/success-stories`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question:
       "Are there any prerequisites for enrolling in the Walmart Vriddhi program?",
     answer: `To enroll in the Walmart Vriddhi program, there are no specific prerequisites mentioned in terms of
@@ -312,54 +312,54 @@ educational background or prior business experience. However, the program is des
 in India, so businesses must meet the criteria for being classified as an MSME.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "Is Walmart Vriddhi different from selling directly on Flipkart?",
     answer: `Yes. Walmart Vriddhi is a capacity-building program. It helps MSMEs build the skills and systems needed to successfully sell on Flipkart and other marketplaces, but does not aid in automatically guaranteed sales.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "Who can apply? Is my business too small to be eligible?",
     answer: `The program is open to any registered MSME in India—from early-stage businesses to more established ones. Whether you run a small local manufacturing unit or a growing D2C brand, you are welcome to register for the Walmart Vriddhi Supplier Development Program.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question:
       "I am already selling on Flipkart. Is there value in joining Walmart Vriddhi Supplier Development Program?",
     answer: `Absolutely. Even existing sellers benefit from training in supply chain optimization, product
 marketing, and business scaling strategies tailored for platform growth.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "How long does it take to get accepted once I apply?",
     answer: `There is no waiting period for acceptance. Once an MSME completes the registration process, it is
 approved without any waiting period.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "Are these courses online, in person, or hybrid?",
     answer: `The program is primarily online to ensure nationwide access, but you may be invited to physical or
 hybrid sessions in select cities.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "Will I get a certificate upon completion?",
     answer: `Yes, certified participants receive a Walmart Vriddhi Certification of Completion, which adds
 credibility and may help in formalization and funding efforts.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "Will the program help me onboard my products onto Flipkart?",
     answer: `Yes. One-on-one support is available for cataloging, GST requirements, shipping processes, and
 platform readiness. You’ll also get access to pre-launch readiness tools.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "Will I be introduced to buyers or B2B partners?",
     answer: `Select program cohorts and high-potential MSMEs may be invited to pitch events or virtual expos
 where they can showcase their products to institutional buyers.`,
   },
   {
-    category: "Support and assistance",
+    category: "Support and Assistance",
     question: "Can I re-join the program if I paused midway?",
     answer: `Yes, the learning platform is modular. You can resume where you left off or request a new orientation
 call if you wish to restart.`,
