@@ -45,7 +45,7 @@ export default function Page() {
             <div className="md:col-span-5 flex items-center">
               <div className="flex flex-col justify-between h-full">
                 <p>
-                  The Walmart Vriddhi Supplier Development empowers MSMEs to
+                  The Walmart Vriddhi Supplier Development Program empowers MSMEs to
                   participate in digital commerce by supporting their onboarding
                   onto platforms such as Flipkart and the Walmart Marketplace
                   (Walmart.com). This helps MSMEs access both national and

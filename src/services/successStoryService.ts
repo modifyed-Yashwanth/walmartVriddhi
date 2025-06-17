@@ -24,7 +24,7 @@ export const fetchSuccessStoriesNarratives = async (
 export const fetchSuccessStoriesVideos = async (pageSize = 6, page = 1) => {
   try {
     const response = await fetch(
-      `https://docs.walmartvriddhi.org/wp-json/wp/v2/posts?_embed&categories[]=128&production[]=77&status[]=publish&per_page=${pageSize}&page=${page}`,
+      `https://docs.walmartvriddhi.org/wp-json/wp/v2/posts?_embed&categories[]=128&production[]=77&status[]=publish&per_page=${pageSize}&page=${page}&orderby=date&order=asc`,
       {
         next: { revalidate: 60 },
       }

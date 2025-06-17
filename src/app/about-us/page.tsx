@@ -44,18 +44,14 @@ function Page() {
                   goal by training over 60,000 MSMEs and has played a catalytic
                   role in supporting small businesses with growth opportunities
                   to reach new national and international markets.
-                </p>
 
-                <p className="mb-[10px]">
                   The program is tailored to help MSMEs modernize, scale and
                   meet their national, and (for some) international ambitions.
                   It underscores Walmart&apos;s focus to help unlock
                   India&apos;s entrepreneurial capacity and enable MSMEs to
                   thrive in the market. The program offers MSMEs access to
                   free-of-cost training, mentoring, and business advice.
-                </p>
 
-                <p className="mb-[10px]">
                   By using digital tools to train business leaders on crucial
                   aspects of business management such as finance, marketing,
                   workforce management, and environmental sustainability, we
@@ -82,8 +78,7 @@ function Page() {
               as well as logistics and supply chain capabilities – strong local
               businesses that are powered by Walmart. Walmart invests in
               programs and initiatives that help local sellers and suppliers,
-              including kiranas, micro-, small- and medium-sized enterprises.
-              (MSMEs), farmers, artisans and women-owned businesses to
+              including kiranas, MSMEs, farmers, artisans and women-owned businesses to
               modernize, prosper and create local jobs in the country. As a
               socially responsible organization that is committed to creating
               economic opportunity, enhancing long-term environmental
@@ -167,7 +162,7 @@ function Page() {
 
       {/* i2i Foundation Section */}
       <AnimatedSection>
-        <section className="py-5">
+        <section className="py-5 pt-10">
           <h2 className="text-2xl md:text-4xl mb-4">
             About Ideas to Impact Foundation
           </h2>

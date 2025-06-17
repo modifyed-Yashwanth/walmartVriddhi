@@ -52,7 +52,7 @@ export default function NarrativesTab() {
   }
 
   const stories = data?.pages.flat() || [];
-  const spotlightStories = stories.slice(0, 3);
+  const spotlightStories = stories.slice(0, 4);
 
   return (
     <div className="mx-0 sm:mx-4 md:mx-8 lg:mx-[100px]">

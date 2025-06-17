@@ -15,13 +15,13 @@ const growthSteps = [
     image: "/images/home-images/journey2.jpg",
   },
   {
-    title: "Enterprise-specific Personalized Mentoring support",
+    title: "Enterprise-specific personalized mentoring support",
     description:
       "Walmart Vriddhi opens the doors to a network of business Support",
     image: "/images/home-images/journey3.jpg",
   },
   {
-    title: "Grow your Network with Walmart Vriddhi",
+    title: "Grow your network with Walmart Vriddhi",
     description:
       "Celebrate your achievements and business growth with Walmart Vriddhi",
     image: "/images/home-images/journey4.jpg",
@@ -92,7 +92,7 @@ const GrowthJourney = () => {
                 <div className="w-full">
                   <h4 className="md:text-lg mb-2">Growth Journey</h4>
                   <h2 className="text-2xl lg:text-4xl mb-4 leading-snug">
-                    Your Path to Success with Walmart Vriddhi
+                    Your Path to Success with <br className="hidden lg:block" /> Walmart Vriddhi
                   </h2>
                   {/* <p className="text-sm md:text-base">
                     Enable your growth journey with personalized enterprise

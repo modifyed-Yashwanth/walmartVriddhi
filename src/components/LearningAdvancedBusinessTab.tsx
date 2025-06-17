@@ -5,7 +5,7 @@ import { SecondaryButton } from "./buttons";
 const initialCards = [
   {
     icon: "/images/b2b-icon.svg",
-    title: "Success Factors for E-Commerce B2B",
+    title: "Success Factors for eCommerce B2B",
     bg: "bg-[#A9DDF7]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#A9DDF7]",
@@ -33,7 +33,7 @@ const initialCards = [
   },
   {
     icon: "/images/eCommerce-icon.svg",
-    title: "Success Factors for E-Commerce B2C",
+    title: "Success Factors for eCommerce B2C",
     bg: "bg-[#4DBDF5]",
     color: "text-[#001E60]",
     bottomBg: "bg-[#4DBDF5]",

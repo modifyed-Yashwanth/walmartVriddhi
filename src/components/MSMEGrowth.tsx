@@ -43,7 +43,7 @@ export default function MSMEGrowth() {
         >
           <p className="md:text-xl mb-2">5 Simple Steps for You</p>
           <h2 className="text-2xl md:text-4xl mb-4 capitalize">
-            a giant leap for your business
+            A giant leap for your business
           </h2>
         </StaggeredAnimatedSection>
 
@@ -51,7 +51,7 @@ export default function MSMEGrowth() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column */}
           <StaggeredAnimatedSection
-            className="lg:block md:flex md:gap-10 space-y-12"
+            className="md:flex md:flex-col md:gap-10 space-y-12"
             staggerDelay={0.5}
           >
             {features.slice(0, 2).map((feature) => (
@@ -75,13 +75,13 @@ export default function MSMEGrowth() {
               alt="MSME Growth Journey"
               width={400}
               height={400}
-              className="rounded-3xl mx-auto"
+              className="rounded-xl mx-auto"
             />
           </div>
 
           {/* Right Column */}
           <StaggeredAnimatedSection
-            className="lg:block md:flex md:gap-10 space-y-12"
+            className="md:flex md:flex-col md:gap-10 space-y-12"
             staggerDelay={0.3}
           >
             {features.slice(2, 4).map((feature) => (

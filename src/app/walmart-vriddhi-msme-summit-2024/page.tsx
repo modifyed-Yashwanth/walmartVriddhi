@@ -267,7 +267,7 @@ function Page() {
               <div className="relative w-full rounded-xl overflow-hidden space-y-6 sm:space-y-10 md:space-y-14 pt-10">
                 <div className="grid grid-cols-1 lg:grid-cols-10 gap-4 md:gap-10">
                   <div className="md:col-span-5">
-                    <h2 className="text-2xl md:text-4xl">Fireside Chat</h2>
+                    <h2 className="text-2xl md:text-4xl">The Fireside Chat</h2>
                   </div>
                   <div className="md:col-span-5 flex items-center">
                     <div className="flex flex-col justify-between h-full">

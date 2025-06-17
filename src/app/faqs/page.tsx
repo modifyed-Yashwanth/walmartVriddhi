@@ -69,7 +69,7 @@ export default function FAQPage() {
       <AnimatedSection>
         <div className="max-w-6xl mx-auto py-6 md:px-6">
           <h2 className="text-2xl md:text-4xl text-center mb-10">
-            Search and Explore Categories of Frequently Asked Questions
+            Frequently Asked Questions
           </h2>
 
           {/* Search Bar */}
@@ -81,7 +81,7 @@ export default function FAQPage() {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="border-1 border-[#ccc] rounded-full px-4 py-2 w-full md:w-[50%] mb-4 md:mb-0 focus:outline-none"
             />
-            <SecondaryButton text="Search Faqs" className="bg-[#0053e2]" />
+            <SecondaryButton text="Search FAQs" className="bg-[#0053e2]" />
           </div>
 
           {/* Tabs */}
