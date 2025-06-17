@@ -107,7 +107,7 @@ function GrowthTestimonialSlider() {
               {/* Data card only for active image on desktop */}
               {activeIdx === idx && (
                 <div
-                  className={`p-2 font-thin text-sm text-left ml-4 mr-4 flex flex-col justify-between flex-shrink-0
+                  className={`p-2  text-sm text-left ml-4 mr-4 flex flex-col justify-between flex-shrink-0
                     ${
                       step === "hideData"
                         ? "opacity-0 translate-x-4"
@@ -125,13 +125,13 @@ function GrowthTestimonialSlider() {
                   }}
                 >
                   <p
-                    className="text-base md:text-lg text-gray-800 mb-4 truncate text-wrap overflow-hidden"
+                    className="mb-4 truncate text-wrap overflow-hidden"
                     title={testimonial.quote}
                   >
                     {testimonial.quote}
                   </p>
                   <div>
-                    <span className="text-[#0053E2] font-medium hover:underline cursor-pointer">
+                    <span className="text-[#0053E2] hover:underline cursor-pointer">
                       {testimonial.name}
                     </span>
                     <div className="text-gray-500 text-sm mt-1">
@@ -172,7 +172,7 @@ function GrowthTestimonialSlider() {
                 {testimonial.quote}
               </p>
               <div>
-                <span className="text-[#0053E2] font-medium">
+                <span className="text-[#0053E2]">
                   {testimonial.name}
                 </span>
                 <div className="text-gray-500 text-sm mt-1">
