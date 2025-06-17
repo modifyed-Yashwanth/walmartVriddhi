@@ -126,7 +126,7 @@ export default function MarketConnectTab() {
           efficiently and get maximum customers on Flipkart.
         </p>
 
-        <div className="bg-[#A9DDF7] rounded-lg p-4 md:p-10 grid grid-cols-1 md:grid-cols-12 items-center gap-10 md:gap-20 space-x-6 mx-auto mt-10 hover:scale-105 duration-500 transition-transform hover:scale-105 duration-500 transition-transform">
+        <div className="bg-[#A9DDF7] rounded-lg p-4 md:p-10 grid grid-cols-1 md:grid-cols-12 items-center gap-10 md:gap-20 space-x-6 mx-auto mt-10 hover:scale-105 duration-500 transition-transform">
           {/* Icon Box */}
           <div className="rounded-xl mb-3 md:mb-0 col-span-5 md:col-span-3">
             <Image

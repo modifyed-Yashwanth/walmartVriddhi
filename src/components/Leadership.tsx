@@ -17,7 +17,7 @@ function Leadership() {
           staggerDelay={0.2}
         >
           <p className="md:text-xl mb-2"></p>
-          <h2 className="text-2xl md:text-4xl">Know More About Us</h2>
+          <h2 className="text-2xl md:text-4xl">Hear From Us</h2>
         </StaggeredAnimatedSection>
 
         <div className="mt-4 md:mt-10 w-full lg:px-30">
