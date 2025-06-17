@@ -57,7 +57,7 @@ function page() {
         <AnimatedSection>
           <div className="relative w-full h-[420px] rounded-xl overflow-hidden">
             <Image
-              src="/images/marketplace/cross-border-trade.png"
+              src="/images/marketplace/cross-border-trade.jpg"
               alt="marketplace image middle"
               className="object-cover object-top"
               fill
@@ -254,7 +254,7 @@ function page() {
       <AnimatedSection>
         <div className="relative w-full h-[500px] md:h-[420px] overflow-hidden rounded-xl">
           <Image
-            src="/images/marketplace/bottom-banner.png"
+            src="/images/marketplace/bottom-banner.jpg"
             alt="Walmart Hero"
             className="object-cover object-right rounded-xl"
             fill

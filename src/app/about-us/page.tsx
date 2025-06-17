@@ -15,7 +15,7 @@ function Page() {
         <section className="">
           <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
             <Image
-              src="/images/about-us-images/about-us-banner.png"
+              src="/images/about-us-images/about-us-banner.jpg"
               alt="about us banner"
               className="object-cover"
               fill
@@ -169,7 +169,7 @@ function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
             <div
               className="min-h-[350px] md:col-span-5 flex items-center bg-cover bg-right md:bg-top w-full h-full rounded-xl relative before:absolute before:h-[90%] before:w-[90%] before:border-2 before:block before:border-white before:inset-x-0 before:left-[5%] before:rounded-xl"
-              style={{ backgroundImage: "url('/images/i2i-about-us.jpg')" }}
+              style={{ backgroundImage: "url('/images/about-us-images/i2i-about-us.jpg')" }}
             ></div>
             <div className="md:col-span-5 flex items-center h-full">
               <div className="space-y-6 bg-white p-6 rounded-xl shadow-md h-full py-10">

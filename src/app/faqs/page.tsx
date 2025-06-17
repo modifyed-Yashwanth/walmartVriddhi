@@ -48,7 +48,7 @@ export default function FAQPage() {
       <AnimatedSection>
         <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden md:mb-10">
           <Image
-            src="/images/faqs/banner.jpg"
+            src="/images/faqs/faq-banner.jpg"
             alt="faqs-banner"
             className="object-cover object-top"
             fill
