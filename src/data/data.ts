@@ -280,9 +280,7 @@ listing etc.`,
     question:
       "Does Walmart Vriddhi support women-led businesses and enterprises?",
     answer: `Yes, the program has so far empowered over 10,000 women-led businesses and enterprises
-focused on environmental sustainability in sourcing, manufacturing, and packaging. Over the next
-three years, we will further empower 15,000 more women-led businesses to successfully grow their
-businesses on e-commerce platforms.`,
+focused on environmental sustainability in sourcing, manufacturing, and packaging.`,
   },
   {
     category: "Support and Assistance",
