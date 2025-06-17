@@ -93,7 +93,7 @@ export default function FAQPage() {
               "Market Access and Opportunities",
               "Program Structure and Curriculum",
               "Application Process",
-              "Support and assistance",
+              "Support and Assistance",
             ].map((tab) => (
               <SecondaryButton
                 key={tab}
@@ -139,7 +139,7 @@ export default function FAQPage() {
                         </span>
                       </AccordionTrigger>
                       <AccordionContent className="p-4 border-t">
-                        <p className="text-gray-700 leading-5">{faq.answer}</p>
+                        <p className="text-gray-700 leading-5" dangerouslySetInnerHTML={{__html:faq.answer}} />
                       </AccordionContent>
                     </AccordionItem>
                   );
