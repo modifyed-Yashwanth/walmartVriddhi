@@ -28,27 +28,27 @@ export const slides = [
 export const benefitsData = {
   benefits: [
     {
-      image: "/images/benefit.jpg",
+      image: "/images/home-images/benefit1.jpg",
       title: "Business Development Assistance to Go Digital",
       description: "Experience unparalleled support tailored for your growth.",
     },
     {
-      image: "/images/exclusive-pre-launch.jpg",
+      image: "/images/home-images/benefit2.jpg",
       title: "Support to Grow on Flipkart",
       description: "Gain valuable insights and access to markets.",
     },
     {
-      image: "/images/new-domestic-markets.jpg",
+      image: "/images/home-images/benefit3.jpg",
       title: "Access to Domestic and International Marketplaces",
       description: "Connect with like-minded individuals and grow together.",
     },
     {
-      image: "/images/collaborate-and-grow.jpg",
+      image: "/images/home-images/benefit4.jpg",
       title: "Collaborate and Grow your MSME Network",
       description: "Connect with like-minded individuals and grow together.",
     },
     {
-      image: "/images/personalized-mentoring-support.jpg",
+      image: "/images/home-images/benefit5.jpg",
       title: "Personalized Mentoring Support",
       description: "Connect with like-minded individuals and grow together.",
     },

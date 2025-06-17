@@ -71,7 +71,7 @@ export default function MSMEGrowth() {
           {/* Center Image */}
           <div className="text-center">
             <Image
-              src="/images/msme-growth-journey.webp"
+              src="/images/home-images/growth-journey.jpg"
               alt="MSME Growth Journey"
               width={400}
               height={400}

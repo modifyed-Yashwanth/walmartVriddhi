@@ -41,6 +41,9 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                   fill
                   className="object-cover"
                   priority={index === 0}
+                  placeholder="blur"
+                  blurDataURL={slide.image}
+                  quality={70}
                 />
                 {/* Overlay gradient for desktop, except for 3rd slide and never on mobile */}
                 {slide.overlay && index !== 2 && (

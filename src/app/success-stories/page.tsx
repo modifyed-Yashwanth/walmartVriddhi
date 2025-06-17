@@ -21,9 +21,9 @@ export default function Page() {
       <AnimatedSection>
         <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
           <Image
-            src="/images/Newsroom bannernew.jpg"
+            src="/images/success-stories/banner.png"
             alt="success stories hero image"
-            className="object-cover"
+            className="object-cover object-top"
             fill
             priority
           />

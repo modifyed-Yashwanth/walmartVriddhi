@@ -16,7 +16,7 @@ function page() {
         <AnimatedSection>
           <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
             <Image
-              src="/images/MSME-Growth-Journey-Banner.jpg"
+              src="/images/marketplace/market-banner.jpg"
               alt="Walmart Marketplace Banner"
               className="object-cover object-right"
               fill
@@ -57,7 +57,7 @@ function page() {
         <AnimatedSection>
           <div className="relative w-full h-[420px] rounded-xl overflow-hidden">
             <Image
-              src="/images/market-place-image.jpg"
+              src="/images/marketplace/cross-border-trade.png"
               alt="marketplace image middle"
               className="object-cover object-top"
               fill
@@ -76,7 +76,7 @@ function page() {
                 <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[300px] w-full overflow-hidden bg-[#F3F3F3]">
                   <div className="w-full sm:w-[40%] h-[200px] sm:h-full relative">
                     <Image
-                      src="/images/msmes.jpg"
+                      src="/images/marketplace/card1.jpg"
                       alt="msmes"
                       fill
                       className="object-cover object-top"
@@ -102,7 +102,7 @@ function page() {
                 <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[300px] w-full overflow-hidden bg-[#F3F3F3]">
                   <div className="w-full sm:w-[40%] h-[200px] sm:h-full relative">
                     <Image
-                      src="/images/msmes2.jpg"
+                      src="/images/marketplace/card2.jpg"
                       alt="msmes"
                       fill
                       className="object-cover object-top"
@@ -126,7 +126,7 @@ function page() {
                 <Card className="flex flex-col md:flex-row items-center h-auto sm:h-[240px] md:h-[300px] w-full overflow-hidden bg-[#F3F3F3]">
                   <div className="w-full sm:w-[40%] h-[200px] sm:h-full relative">
                     <Image
-                      src="/images/marketplace-3.jpg"
+                      src="/images/marketplace/card3.jpg"
                       alt="msmes"
                       fill
                       className="object-cover object-right-top"
@@ -147,7 +147,7 @@ function page() {
                 <Card className="flex flex-col sm:flex-row items-center h-auto sm:h-[240px] md:h-[300px] w-full overflow-hidden bg-[#F3F3F3]">
                   <div className="w-full sm:w-[40%] h-[200px] sm:h-full relative">
                     <Image
-                      src="/images/marketplace-4.jpg"
+                      src="/images/marketplace/card4.jpg"
                       alt="msmes"
                       fill
                       className="object-cover object-right-top"
@@ -254,7 +254,7 @@ function page() {
       <AnimatedSection>
         <div className="relative w-full h-[500px] md:h-[420px] overflow-hidden rounded-xl">
           <Image
-            src="/images/walmart-bottom-bg.jpg"
+            src="/images/marketplace/bottom-banner.png"
             alt="Walmart Hero"
             className="object-cover object-right rounded-xl"
             fill

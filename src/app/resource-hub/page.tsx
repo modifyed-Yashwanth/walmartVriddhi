@@ -86,7 +86,7 @@ export default function Page() {
       <AnimatedSection>
         <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-lg overflow-hidden">
           <Image
-            src="/images/resource-hub.png"
+            src="/images/resource-hub/banner.png"
             alt="resource-hub hero image"
             className="object-cover object-top"
             fill

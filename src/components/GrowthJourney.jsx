@@ -7,24 +7,24 @@ const growthSteps = [
     title: "Grow domestically with Flipkart incubation support",
     description:
       "Start your journey with Flipkart – India's leading online marketplace",
-    image: "/images/grow-domestically-with-flipkart-incubation-support.jpg",
+    image: "/images/home-images/journey1.jpg",
   },
   {
     title: "Grow internationally with Walmart Marketplace",
     description: "Personalized guidance from industry experts and mentors",
-    image: "/images/Enterprise-specific Personalized Mentoring support (2).jpg",
+    image: "/images/home-images/journey2.jpg",
   },
   {
     title: "Enterprise-specific Personalized Mentoring support",
     description:
       "Walmart Vriddhi opens the doors to a network of business Support",
-    image: "/images/Grow your network.jpg",
+    image: "/images/home-images/journey3.jpg",
   },
   {
     title: "Grow your Network with Walmart Vriddhi",
     description:
       "Celebrate your achievements and business growth with Walmart Vriddhi",
-    image: "/images/Your Success Awaits.jpg",
+    image: "/images/home-images/journey4.jpg",
   },
 ];
 

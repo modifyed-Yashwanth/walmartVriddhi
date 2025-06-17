@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { SecondaryButton } from "@/components/buttons";
-import AboutPageInfographic from "@/components/AboutPageInfographic";
+// import AboutPageInfographic from "@/components/AboutPageInfographic";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 
@@ -15,7 +15,7 @@ function Page() {
         <section className="">
           <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
             <Image
-              src="/images/About-Us-Banner.jpg"
+              src="/images/about-us-images/about-us-banner.png"
               alt="about us banner"
               className="object-cover"
               fill
@@ -67,6 +67,41 @@ function Page() {
             </div>
           </div>
         </section>
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <div className="relative w-full overflow-hidden my-6 sm:my-10">
+          <h2 className="text-2xl md:text-4xl mb-4">About Walmart in India</h2>
+          <div className="md:col-span-5">
+            <p className="mb-[10px]">
+              Walmart is committed to a future where retail in India is a mix of
+              shopping experiences that best serve Indian consumers, suppliers,
+              producers and retailers. Walmart is building out a holistic
+              ecosystem that includes a wholesale cash-and-carry business,
+              eCommerce platforms, a payments and financial services platform,
+              as well as logistics and supply chain capabilities – strong local
+              businesses that are powered by Walmart. Walmart invests in
+              programs and initiatives that help local sellers and suppliers,
+              including kiranas, micro-, small- and medium-sized enterprises.
+              (MSMEs), farmers, artisans and women-owned businesses to
+              modernize, prosper and create local jobs in the country. As a
+              socially responsible organization that is committed to creating
+              economic opportunity, enhancing long-term environmental
+              sustainability and strengthening local communities, Walmart is
+              determined to help drive India&apos;s growth story and create
+              shared value. Additional information about Walmart can be found by
+              visiting{" "}
+              <Link
+                href="https://corporate.walmart.com/"
+                target="_blank"
+                className="text-[#0053e2]"
+              >
+                corporate.walmart.com
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
       </AnimatedSection>
 
       <AnimatedSection>
@@ -123,58 +158,12 @@ function Page() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection>
-        <div className="relative w-full overflow-hidden my-6 sm:my-10">
-          <h2 className="text-2xl md:text-4xl mb-4">About Walmart in India</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-10 items-center gap-10">
-            <div className="md:col-span-5">
-              <Image
-                src="/images/about-us-left.jpg"
-                alt="about page left"
-                height={500}
-                width={500}
-                className="w-full h-auto rounded-xl"
-              />
-            </div>
-            <div className="md:col-span-5">
-              <p className="mb-[10px]">
-                Walmart is committed to a future where retail in India is a mix
-                of shopping experiences that best serve Indian consumers,
-                suppliers, producers and retailers. Walmart is building out a
-                holistic ecosystem that includes a wholesale cash-and-carry
-                business, eCommerce platforms, a payments and financial services
-                platform, as well as logistics and supply chain capabilities –
-                strong local businesses that are powered by Walmart. Walmart
-                invests in programs and initiatives that help local sellers and
-                suppliers, including kiranas, micro-, small- and medium-sized
-                enterprises. (MSMEs), farmers, artisans and women-owned
-                businesses to modernize, prosper and create local jobs in the
-                country. As a socially responsible organization that is
-                committed to creating economic opportunity, enhancing long-term
-                environmental sustainability and strengthening local
-                communities, Walmart is determined to help drive India&apos;s
-                growth story and create shared value. Additional information
-                about Walmart can be found by visiting{" "}
-                <Link
-                  href="https://corporate.walmart.com/"
-                  target="_blank"
-                  className="text-[#0053e2]"
-                >
-                  corporate.walmart.com
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
-
       {/* Marketplace Info Section */}
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <div>
           <AboutPageInfographic />
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* i2i Foundation Section */}
       <AnimatedSection>

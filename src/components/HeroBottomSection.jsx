@@ -11,7 +11,7 @@ const HeroBottomSection = () => {
       <div className="py-0">
         <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden my-4 rounded-xl">
           <Image
-            src="/images/bottom-banner.jpg"
+            src="/images/home-images/hero-bottom.png"
             alt="Walmart Hero"
             className="object-cover object-left md:object-center"
             fill

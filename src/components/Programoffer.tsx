@@ -107,11 +107,11 @@ const ProgramOpportunitySection = () => {
           {/* Right Column: Image */}
           <div className="w-full lg:w-1/2">
             <Image
-              src="/images/grow-your-business.jpg"
+              src="/images/home-images/grow-your-business.jpg"
               alt="Program Opportunity"
               width={600} // required in next/image
               height={600} // required in next/image
-              className="rounded-xl object-cover object-top w-full max-h-[500px] max-w-[600px]"
+              className="rounded-xl object-cover  max-h-[600px] max-w-[600px]"
             />
           </div>
         </div>

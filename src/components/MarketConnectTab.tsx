@@ -77,7 +77,10 @@ export default function MarketConnectTab() {
                     <div className="flex items-start space-x-4 group">
                       <div className="flex flex-col items-center">
                         <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-200">
-                          <step.icon className="w-6 h-6 text-blue-600" />
+                          <step.icon
+                            className="w-6 h-6 text-blue-600"
+                            stroke="#001E60"
+                          />
                         </div>
                         {!step.isLast && (
                           <div className="w-0.5 h-8 bg-gray-200"></div>
@@ -108,7 +111,10 @@ export default function MarketConnectTab() {
             </div>
             <div
               className="md:col-span-5 flex items-center bg-cover bg-center w-full h-full rounded-lg relative before:absolute before:h-[90%] before:w-[90%] before:border-2 before:block before:border-white before:inset-x-0 before:left-[5%] before:rounded-lg min-h-[350px]"
-              style={{ backgroundImage: "url('/images/Onboarding-left.jpg')" }}
+              style={{
+                backgroundImage:
+                  "url('/images/growth-journey/market-connect-right.jpg')",
+              }}
             ></div>
           </div>
         </div>

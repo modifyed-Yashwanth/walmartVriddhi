@@ -19,9 +19,9 @@ export default function Page() {
       <AnimatedSection>
         <div className="relative h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
           <Image
-            src="/images/Marketplace-Bannerv2.jpg"
+            src="/images/growth-journey/banner.jpg"
             alt="success stories hero image"
-            className="object-cover object-right"
+            className="object-cover object-top"
             fill
             priority
           />
@@ -61,7 +61,7 @@ export default function Page() {
       <AnimatedSection>
         <div className="relative w-full h-100 rounded-lg overflow-hidden">
           <Image
-            src="/images/growth-journey-bannerv2.jpg"
+            src="/images/growth-journey/learning-image.png"
             alt="growth-j-image"
             className="object-cover object-top"
             fill
