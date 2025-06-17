@@ -5,13 +5,15 @@ import Image from "next/image";
 import { SecondaryButton } from "@/components/buttons";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
+import { usePathname } from "next/navigation";
 // import { Card } from "@/components/ui/card";
 
-function page() {
+function Summit2025() {
+  const pathname = usePathname();
   return (
     <>
       <div className="w-full">
-        <AnimatedSection>
+        <AnimatedSection key={pathname}>
           <div className="relative w-full rounded-lg overflow-hidden">
             <Link
               href="https://taffexperience.com/msme-summit-2025/"
@@ -29,7 +31,7 @@ function page() {
           <p className="text-center">
             <SecondaryButton
               text="Register for Walmart Vriddhi MSME Summit 2025"
-              className={`w-full  bg-[#0053e2] text-white border-[#0053e2] mt-6 mx-auto`}
+              className={`bg-[#0053e2] text-white border-[#0053e2] mt-6`}
               onClick={() => {
                 window.open(
                   "https://taffexperience.com/msme-summit-2025/",
@@ -291,4 +293,4 @@ function page() {
   );
 }
 
-export default page;
+export default Summit2025;

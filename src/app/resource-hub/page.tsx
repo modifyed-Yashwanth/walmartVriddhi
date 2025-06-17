@@ -4,7 +4,6 @@ import { SecondaryButton } from "@/components/buttons";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 import { useQuery } from "@tanstack/react-query";
 import { fetchResourceHub } from "@/services/resourceHubService";
 import MobileResourceSelect from "@/components/MobileResourceSelect";
@@ -115,13 +114,13 @@ export default function Page() {
               <SecondaryButton
                 key={tabName}
                 text={tabName}
-                className={cn(
-                  "text-sm font-normal w-full max-h-full sm:w-[220px] md:w-[260px]",
+                className={`w-full sm:w-[220px] md:w-[260px] ${
                   activeTab === tabName
                     ? "bg-[#0053e2] text-white border-[#0053e2]"
                     : ""
-                )}
+                }`}
                 onClick={() => setActiveTab(tabName)}
+                variant={activeTab === tabName ? "primary" : "secondary"}
               />
             ))}
           </div>

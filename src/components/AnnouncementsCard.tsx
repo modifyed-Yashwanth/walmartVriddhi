@@ -33,7 +33,9 @@ function AnnouncementsCard({
 
       {/* Text content (full width on mobile, 70% on desktop) */}
       <div className="w-full sm:w-[65%] p-4 flex flex-col justify-between space-y-3 sm:space-y-4">
-        <h2 className="uppercase font-normal text-[#0053E2] text-sm">{source}</h2>
+        <h2 className="uppercase font-normal text-[#0053E2] text-sm">
+          {source}
+        </h2>
         <div className="flex flex-col gap-3 sm:gap-4">
           <h2 className="text-sm md:text-md font-semibold line-clamp-3 mb-1">
             {decodedTitle}
@@ -42,7 +44,7 @@ function AnnouncementsCard({
             <SecondaryButton
               href={`/newsroom/${slug}`}
               text="Read more"
-              className="w-[120px] text-semibold bg-white"
+              variant="secondary"
             />
           </div>
         </div>

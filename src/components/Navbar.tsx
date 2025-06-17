@@ -110,10 +110,10 @@ export default function Navbar({ sticky = true }: { sticky?: boolean }) {
               <input
                 type="text"
                 placeholder="Search"
-                className="pl-10 pr-4 py-1.5 rounded-full h-[32px] w-[200px] bg-white text-black placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white/20"
+                className="py-4 px-8 rounded-full h-[32px] w-[200px] bg-white text-black placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white/20"
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <i className="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-black/70" />
+              <i className="fas fa-search absolute left-2 top-1/2 -translate-y-1/2 text-black/70" />
             </form>
           </div>
         </nav>

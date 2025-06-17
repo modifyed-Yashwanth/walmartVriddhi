@@ -64,6 +64,7 @@ function AnnouncementsTab() {
             text={isFetchingNextPage ? "Loading..." : "Load More"}
             onClick={() => fetchNextPage()}
             disabled={isFetchingNextPage}
+            variant="secondary"
           />
         </div>
       )}

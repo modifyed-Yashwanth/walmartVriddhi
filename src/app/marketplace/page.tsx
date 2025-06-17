@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import CoursesSection from "@/components/CourseSection";
 import CBTOfferSection from "@/components/CBTOfferSection";
 import AnimatedSection from "@/components/AnimatedSection";
+import { SecondaryButton } from "@/components/buttons";
 
 function page() {
   return (
@@ -263,17 +264,15 @@ function page() {
           <div className="absolute inset-0 flex items-top md:items-center top-[10%] md:top-0 left-[20px] md:left-[50px]">
             <div className="text-white max-w-full md:max-w-lg lg:max-w-[50%]">
               <div>
-                <h2 className="text-2xl md:text-4xl font-bold mb-4 leading-normal">
+                <h2 className="text-2xl md:text-4xl font-bold mb-6 leading-normal">
                   Complete Walmart Vriddhi learning modules to be eligible to
                   sell on Walmart Marketplace
                 </h2>
-                <a
+                <SecondaryButton
                   href="https://seller.walmart.com/signup?q=&origin=marketing_campaign&src=TestIndiaCampaign_Vriddhi&exp=MjAyNS0wMy0xNA=="
-                  className="inline-block bg-[#0053E2] hover:bg-[#0053E2] text-white px-6 py-3 rounded-full text-sm font-medium transition"
                   target="_blank"
-                >
-                  Register on the Walmart Seller Center
-                </a>
+                  text="Register on the Walmart Seller Center"
+                />
               </div>
             </div>
           </div>

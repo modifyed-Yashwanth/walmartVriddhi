@@ -32,10 +32,12 @@ export default function NarrativesSlider({ slides }: NarrativesSliderProps) {
         >
           <div className="flex flex-col lg:flex-row items-center gap-4 md:gap-8">
             <div className="relative w-full h-[200px] md:w-[320px] md:h-[320px]">
-              
               {slide.acf.author_profile_new?.url && (
                 <Image
-                  src={slide.acf.author_profile_new?.url || slide?._embedded?.["wp:featuredmedia"]?.[0]?.source_url}
+                  src={
+                    slide.acf.author_profile_new?.url ||
+                    slide?._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+                  }
                   alt={slide.title.rendered}
                   fill
                   className="object-cover object-top rounded-xl"
@@ -64,7 +66,7 @@ export default function NarrativesSlider({ slides }: NarrativesSliderProps) {
                 <SecondaryButton
                   href={`/success-stories/${slide.slug}`}
                   text="Read more"
-                  className="w-[120px] text-semibold bg-white"
+                  variant="secondary"
                 />
               </div>
             </div>

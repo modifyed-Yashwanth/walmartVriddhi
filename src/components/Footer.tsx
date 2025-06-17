@@ -17,7 +17,7 @@ const Footer = () => {
       <AnimatedSection delay={0.4}>
         <footer className="bg-white">
           <PartnersSection />
-          <div className="bg-white text-black border-t border-gray-300 text-[14px] font-light font-everyday">
+          <div className="bg-white text-primary border-t border-gray-300 text-[14px] font-light font-everyday">
             <div className="mx-auto my-[35px] max-w-[1500px] px-4 md:px-15 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 text-sm">
               {/* Logo */}
               <div className="col-span-3">

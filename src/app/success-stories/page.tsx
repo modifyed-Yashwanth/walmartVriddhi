@@ -7,8 +7,10 @@ import VideosTab from "@/components/VideosTab";
 import Image from "next/image";
 import { useState } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
+import { usePathname } from "next/navigation";
 
 export default function Page() {
+  const pathname = usePathname();
   const [activeTab, setActiveTab] = useState<"narratives" | "videos">(
     "narratives"
   );
@@ -40,8 +42,9 @@ export default function Page() {
       </AnimatedSection>
 
       {/* Tabs + Content */}
-      <AnimatedSection>
-        <div className="flex flex-col items-center my-6 md:my-10 space-y-6 sm:space-y-10 md:space-y-14">
+
+      <div className="flex flex-col items-center my-6 md:my-10 space-y-6 sm:space-y-10 md:space-y-14">
+        <AnimatedSection>
           {/* Tabs */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-6 md:gap-x-8 items-center justify-center w-full max-w-md sm:max-w-none px-4 sm:px-0">
             <SecondaryButton
@@ -52,6 +55,7 @@ export default function Page() {
                   : ""
               }`}
               onClick={() => setActiveTab("narratives")}
+              variant={activeTab === "narratives" ? "primary" : "secondary"}
             />
             <SecondaryButton
               text="Videos"
@@ -61,11 +65,13 @@ export default function Page() {
                   : ""
               }`}
               onClick={() => setActiveTab("videos")}
+              variant={activeTab === "videos" ? "primary" : "secondary"}
             />
           </div>
+        </AnimatedSection>
 
-          {/* Filters */}
-          {/* <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-8 md:gap-x-12 items-center justify-center w-full max-w-md sm:max-w-xl md:max-w-2xl px-4 sm:px-0">
+        {/* Filters */}
+        {/* <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-8 md:gap-x-12 items-center justify-center w-full max-w-md sm:max-w-xl md:max-w-2xl px-4 sm:px-0">
             <CustomInput
               placeholder="search by topic"
               className="w-full md:w-[300px] sm:w-auto"
@@ -93,13 +99,15 @@ export default function Page() {
             </div>
           </div> */}
 
-          {/* Tab-specific Content */}
+        {/* Tab-specific Content */}
+        <AnimatedSection key={pathname}>
           <div className="w-full px-4 sm:px-0">
             {activeTab === "narratives" && <NarrativesTab />}
             {activeTab === "videos" && <VideosTab />}
           </div>
-        </div>
-      </AnimatedSection>
+        </AnimatedSection>
+      </div>
+      {/* </AnimatedSection> */}
     </>
   );
 }

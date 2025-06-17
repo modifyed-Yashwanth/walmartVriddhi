@@ -5,10 +5,20 @@ interface ButtonProps {
   text: string;
   href?: string;
   className?: string;
-  target?: string; // For links, e.g., "_blank" for opening in a new tab
+  target?: string;
   disabled?: boolean;
   onClick?: () => void;
+  variant?: "primary" | "secondary";
+  inverseRole?: boolean;
 }
+
+const resolveVariant = (
+  variant: "primary" | "secondary" = "primary",
+  inverseRole?: boolean
+): "primary" | "secondary" => {
+  if (!inverseRole) return variant;
+  return variant === "primary" ? "secondary" : "primary";
+};
 
 export const PrimaryButton = ({
   text,
@@ -16,17 +26,31 @@ export const PrimaryButton = ({
   className,
   disabled,
   onClick,
+  variant = "primary",
+  inverseRole,
 }: ButtonProps) => {
+  const finalVariant = resolveVariant(variant, inverseRole);
+
+  const baseClasses = clsx(
+    "px-[20px] py-[10px] font-[400] rounded-full transition-all text-[14px] leading-[1.2] text-center cursor-pointer shadow",
+    {
+      "bg-[#0053E2] text-white": finalVariant === "primary",
+      "bg-white text-[#001e60]": finalVariant === "secondary",
+    },
+    className
+  );
+
+  if (href) {
+    return (
+      <Link href={href} className={baseClasses} onClick={onClick}>
+        {text}
+      </Link>
+    );
+  }
+
   return (
-    <button
-      className={clsx(
-        `px-[24px] py-[10px] font-[400] rounded-full min-w-[200px] w-max transition-all text-[14px] leading-[18px] bg-[#0053e2] shadow text-center cursor-pointer`,
-        className
-      )}
-      onClick={onClick}
-      disabled={disabled}
-    >
-      {href ? <Link href={href}>{text}</Link> : text}
+    <button className={baseClasses} onClick={onClick} disabled={disabled}>
+      {text}
     </button>
   );
 };
@@ -38,35 +62,66 @@ export const SecondaryButton = ({
   target,
   disabled,
   onClick,
+  variant = "primary",
+  inverseRole,
 }: ButtonProps) => {
-  const isBlueButton = className?.includes("bg-[#0053e2]");
+  const finalVariant = resolveVariant(variant, inverseRole);
 
-  const baseClasses =
-    "px-[24px] py-[10px] font-[400] rounded-full min-w-[200px] w-max transition-all text-[14px] leading-[18px] cursor-pointer text-[#2E2F32] text-center";
-
-  const combinedClasses = clsx(
-    baseClasses,
-    !isBlueButton && "ring ring-[#2E2F32] hover:ring-2",
-    isBlueButton && "text-white hover:shadow-sm border-1 border-[#0053e2]",
+  const baseClasses = clsx(
+    "px-[20px] py-[10px] font-[400] rounded-full transition-all text-[14px] leading-[1.2] text-center cursor-pointer",
+    {
+      "bg-[#0053E2] text-white ring ring-[#0053E2] hover:ring-2":
+        finalVariant === "primary",
+      "bg-white text-[#2E2F32] ring ring-[#2E2F32] hover:ring-2":
+        finalVariant === "secondary",
+    },
+    {
+      "pointer-events-none opacity-50 w-max": disabled,
+    },
     className
   );
 
   if (href) {
     return (
-      <Link
-        href={href}
-        target={target ? target : "_self"}
-        className={clsx(combinedClasses, {
-          "pointer-events-none opacity-50 w-max": disabled,
-        })}
-      >
+      <Link href={href} target={target || "_self"} className={baseClasses}>
         {text}
       </Link>
     );
   }
 
   return (
-    <button className={combinedClasses} onClick={onClick} disabled={disabled}>
+    <button className={baseClasses} onClick={onClick} disabled={disabled}>
+      {text}
+    </button>
+  );
+};
+
+export const BannerButton = ({
+  text,
+  href,
+  className,
+  target,
+  disabled,
+  onClick,
+}: ButtonProps) => {
+  const baseClasses = clsx(
+    "px-[20px] py-[10px] font-[400] rounded-full transition-all text-[14px] leading-[1.2] text-center cursor-pointer bg-white text-[#0053E2]",
+    {
+      "pointer-events-none opacity-50": disabled,
+    },
+    className
+  );
+
+  if (href) {
+    return (
+      <Link href={href} target={target || "_self"} className={baseClasses}>
+        {text}
+      </Link>
+    );
+  }
+
+  return (
+    <button className={baseClasses} onClick={onClick} disabled={disabled}>
       {text}
     </button>
   );

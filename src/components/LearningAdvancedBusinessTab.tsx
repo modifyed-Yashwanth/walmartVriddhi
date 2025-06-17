@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { SecondaryButton } from "./buttons";
+import { PrimaryButton } from "./buttons";
 
 const initialCards = [
   {
@@ -161,11 +161,7 @@ export default function LearningAdvancedBusinessTab() {
         </div>
         {currentIndex < initialCards.length && (
           <div className="sm:mt-0 flex justify-center md:mt-8">
-            <SecondaryButton
-              onClick={handleLoadMore}
-              text="Load more"
-              className="w-[120px] text-semibold bg-white"
-            />
+            <PrimaryButton onClick={handleLoadMore} text="Load more" />
           </div>
         )}
       </div>

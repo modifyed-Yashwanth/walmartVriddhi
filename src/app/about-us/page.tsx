@@ -75,16 +75,16 @@ function Page() {
             <div className="md:col-span-10">
               <h2 className="text-2xl md:text-4xl mb-4">About Walmart</h2>
               <p>
-                Walmart Inc. is a people-led, tech-powered
-                omnichannel retailer helping people save money and live better -
-                anytime and anywhere - in stores, online, and through their
-                mobile devices. Each week, approximately 270 million customers
-                and members visit more than 10,750 stores and numerous eCommerce
-                websites in 19 countries. With fiscal year 2025 revenue of $681
-                billion, Walmart employs approximately 2.1 million associates
-                worldwide. Walmart continues to be a leader in sustainability,
-                corporate philanthropy, and employment opportunity. Additional
-                information about Walmart can be found by visiting{" "}
+                Walmart Inc. is a people-led, tech-powered omnichannel retailer
+                helping people save money and live better - anytime and anywhere
+                - in stores, online, and through their mobile devices. Each
+                week, approximately 270 million customers and members visit more
+                than 10,750 stores and numerous eCommerce websites in 19
+                countries. With fiscal year 2025 revenue of $681 billion,
+                Walmart employs approximately 2.1 million associates worldwide.
+                Walmart continues to be a leader in sustainability, corporate
+                philanthropy, and employment opportunity. Additional information
+                about Walmart can be found by visiting{" "}
                 <Link
                   href="https://corporate.walmart.com/"
                   target="_blank"
@@ -208,7 +208,7 @@ function Page() {
                   href={`https://i2ifoundation.org/`}
                   text="Know More"
                   target="_blank"
-                  className="w-[150px] text-semibold bg-white"
+                  variant="secondary"
                 />
               </div>
             </div>

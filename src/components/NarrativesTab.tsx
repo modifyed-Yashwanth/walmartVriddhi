@@ -58,13 +58,17 @@ export default function NarrativesTab() {
     <div className="mx-0 sm:mx-4 md:mx-8 lg:mx-[100px]">
       {/* Spotlight */}
       <div className="flex flex-col items-start w-full">
-        <h2 className="text-2xl md:text-4xl font-[300] mb-4">In The Spotlight</h2>
+        <h2 className="text-2xl md:text-4xl font-[300] mb-4">
+          In The Spotlight
+        </h2>
         <NarrativesSlider slides={spotlightStories} />
       </div>
 
       <Separator className="my-8" />
       <div className="flex items-start w-full mb-6">
-        <h2 className="text-2xl md:text-4xl font-[300]">Explore More Stories</h2>
+        <h2 className="text-2xl md:text-4xl font-[300]">
+          Explore More Stories
+        </h2>
       </div>
 
       {/* Stories */}
@@ -75,7 +79,10 @@ export default function NarrativesTab() {
             title={story?.title.rendered}
             slug={story?.slug}
             description={story?.excerpt.rendered}
-            image={story?.acf.author_profile_new?.url || story?._embedded?.["wp:featuredmedia"]?.[0]?.source_url}
+            image={
+              story?.acf.author_profile_new?.url ||
+              story?._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+            }
             alt={story?.title.rendered}
             author={story?.acf.author_name}
             authorDesignation={story?.acf.author_designation}
@@ -90,6 +97,7 @@ export default function NarrativesTab() {
             text={isFetchingNextPage ? "Loading..." : "Load More"}
             onClick={() => fetchNextPage()}
             disabled={isFetchingNextPage}
+            variant="secondary"
           />
         </div>
       )}

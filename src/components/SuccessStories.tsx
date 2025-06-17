@@ -43,7 +43,11 @@ export default function SuccessStories() {
               Walmart Vriddhi. Watch their journeys and get inspired to start
               yours today!
             </p>
-            <SecondaryButton href="/success-stories" text="View More" />
+            <SecondaryButton
+              href="/success-stories"
+              text="View More"
+              variant="secondary"
+            />
           </div>
 
           {/* Right Content */}

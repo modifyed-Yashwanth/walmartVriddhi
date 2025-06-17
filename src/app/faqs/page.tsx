@@ -102,6 +102,7 @@ export default function FAQPage() {
                   activeTab === tab ? "bg-[#0053e2] text-white" : ""
                 }`}
                 onClick={() => setActiveTab(tab)}
+                variant={activeTab === tab ? "primary" : "secondary"}
               />
             ))}
           </div>

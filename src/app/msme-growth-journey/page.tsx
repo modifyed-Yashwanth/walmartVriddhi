@@ -83,6 +83,7 @@ export default function Page() {
                   : ""
               }`}
               onClick={() => setActiveTab("learning")}
+              variant={activeTab === "learning" ? "primary" : "secondary"}
             />
             <SecondaryButton
               text="Personalized Mentoring"
@@ -92,6 +93,9 @@ export default function Page() {
                   : ""
               }`}
               onClick={() => setActiveTab("personalized-mentoring")}
+              variant={
+                activeTab === "personalized-mentoring" ? "primary" : "secondary"
+              }
             />
             <SecondaryButton
               text="Market Connect"
@@ -101,6 +105,7 @@ export default function Page() {
                   : ""
               }`}
               onClick={() => setActiveTab("market-connect")}
+              variant={activeTab === "market-connect" ? "primary" : "secondary"}
             />
           </div>
 

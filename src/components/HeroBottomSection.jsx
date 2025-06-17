@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
+import { SecondaryButton } from "./buttons";
 
 const HeroBottomSection = () => {
   return (
@@ -26,13 +27,12 @@ const HeroBottomSection = () => {
                 Empowering your business journey with resources, training, and
                 market access to thrive online.
               </p>
-              <a
+              <SecondaryButton
                 href="https://supplieracademy.northpass.com/"
                 className="inline-block bg-[#0053E2] hover:bg-[#0053E2] text-white px-6 py-3 rounded-full text-sm font-medium transition"
                 target="_blank"
-              >
-                Register for Walmart Vriddhi
-              </a>
+                text="Register for Walmart Vriddhi"
+              />
             </div>
           </div>
         </div>

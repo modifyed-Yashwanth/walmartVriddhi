@@ -70,6 +70,7 @@ export default function Page() {
                   : ""
               }`}
               onClick={() => setActiveTab("announcements")}
+              variant={activeTab === "announcements" ? "primary" : "secondary"}
             />
             <SecondaryButton
               text="Walmart Vriddhi in the News"
@@ -79,6 +80,7 @@ export default function Page() {
                   : ""
               }`}
               onClick={() => setActiveTab("vridhi-news")}
+              variant={activeTab === "vridhi-news" ? "primary" : "secondary"}
             />
           </div>
 
