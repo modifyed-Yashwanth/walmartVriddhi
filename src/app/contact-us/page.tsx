@@ -13,7 +13,7 @@ function page() {
           <div className="w-full">
             <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
               <Image
-                src="/images/contact/banner.png"
+                src="/images/contact/conatct-us-banner.jpg"
                 alt="Conatct us banner image"
                 className="object-cover object-top"
                 fill

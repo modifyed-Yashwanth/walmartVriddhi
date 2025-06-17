@@ -37,7 +37,7 @@ export default function Page() {
       <AnimatedSection>
         <div className="relative w-full h-[150px] md:h-[300px] lg:h-[420px] rounded-xl overflow-hidden">
           <Image
-            src="/images/newsroom/banner.png"
+            src="/images/newsroom/newsroom-banner.jpg"
             alt="Newsroom hero image"
             className="object-cover object-top"
             fill
