@@ -97,7 +97,7 @@ const CourseSection = () => {
     {
       id: 7,
       title: "Packaging Logistics & Distribution",
-      image: "/images/courses/card7.jpg",
+      image: "/images/courses/Card7.jpg",
     },
     {
       id: 8,
