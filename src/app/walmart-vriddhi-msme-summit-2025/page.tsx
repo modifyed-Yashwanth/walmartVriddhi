@@ -13,7 +13,7 @@ function Summit2025() {
   return (
     <>
       <div className="w-full">
-         <style>{`
+        <style>{`
            .msme-2025 ul {
             list-style-type: disc;
             padding-left: 1.5rem;
@@ -45,23 +45,64 @@ function Summit2025() {
               />
             </Link>
             <div className="space-y-2 py-10 max-w-[620px] mx-auto">
-              <p>The Walmart Vriddhi MSME Summit 2025 marks a powerful milestone, celebrating MSMEs trained and empowered through the Walmart Vriddhi Supplier Development Program. Since its launch in 2019, the program has equipped small businesses to digitize, scale, and access new markets, fuelling inclusive growth across India.</p>
-              <p>This year’s summit brings together senior leadership from Walmart, Flipkart, the Ideas to Impact Foundation, government dignitaries, and program alumni to reflect on this journey, share actionable insights, and look ahead to what’s next for India’s MSME ecosystem.
+              <h1 className="my-4 font-medium text-xl">
+                Walmart Vriddhi MSME Summit 2025
+              </h1>
+              <p>
+                The Walmart Vriddhi MSME Summit 2025 marks a powerful milestone,
+                celebrating MSMEs trained and empowered through the Walmart
+                Vriddhi Supplier Development Program. Since its launch in 2019,
+                the program has equipped small businesses to digitize, scale,
+                and access new markets, fuelling inclusive growth across India.
               </p>
-              <p className="text-xl pt-2"><strong>Summit Highlights</strong></p>
+              <p>
+                This year’s summit brings together senior leadership from
+                Walmart, Flipkart, the Ideas to Impact Foundation, government
+                dignitaries, and program alumni to reflect on this journey and
+                share actionable insights for the MSME ecosystem.
+              </p>
+              <p className="text-xl pt-2">
+                <strong>Summit Highlights</strong>
+              </p>
               <ul>
-                <li><strong>Keynote Addresses</strong> from Walmart, Flipkart, and Government of India leaders</li>
-                <li><strong>Fireside Chat</strong> with Walmart Vriddhi MSME graduates</li>
-                <li><strong>Masterclass</strong> on selling and scaling through Walmart and Flipkart Marketplaces</li>
-                <li><strong>MSME Product Showcase</strong> featuring entrepreneurs from across India</li>
+                <li className="list-none">
+                  <strong>Addresses</strong> by Walmart, Flipkart, and
+                  Government leaders
+                </li>
+                <li className="list-none">
+                  <strong>Fireside Chat</strong> with Walmart Vriddhi MSME
+                  graduates
+                </li>
+                <li className="list-none">
+                  <strong>Masterclasses</strong> on selling and scaling through
+                  Walmart and Flipkart Marketplaces
+                </li>
+                <li className="list-none">
+                  <strong>MSME Product Showcase</strong> featuring entrepreneurs
+                  from across the country
+                </li>
               </ul>
-              <p className="text-xl pt-2"><strong>Explore More</strong></p>
+              <p className="text-xl pt-2">
+                <strong>Explore More</strong>
+              </p>
               <ul>
-                <li><strong>Flipkart Interactive Kiosk -</strong> On-ground support to help MSMEs onboard and grow as digital sellers</li>
-                <li><strong>Walmart Vriddhi Stories Film -</strong> A tribute to the inspiring journeys of small businesses from across the country</li>
+                <li className="list-none">
+                  <strong>Flipkart Interactive Kiosk:</strong> On-ground support
+                  to help MSMEs onboard and grow as digital sellers
+                </li>
+                <li className="list-none">
+                  <strong>Walmart Vriddhi Seller Stories Film:</strong> A
+                  tribute to the inspiring journeys of small businesses from
+                  across the country
+                </li>
               </ul>
-              <p className="text-xl pt-2"><strong>Register Now</strong></p>
-              <p>Be part of this dynamic platform to learn, connect, and celebrate the future of India’s MSMEs.</p>
+              <p className="text-xl pt-2">
+                <strong>Register Now</strong>
+              </p>
+              <p>
+                Be part of this dynamic platform to learn, connect, and
+                celebrate MSMEs.
+              </p>
             </div>
           </div>
           <p className="text-center">

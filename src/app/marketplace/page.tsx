@@ -227,8 +227,7 @@ function page() {
 
             {/* Text */}
             <p className="text-[#0053e2] text-xl font-regular">
-              Impactful advertising and marketing campaigns via Walmart
-              Connect
+              Impactful advertising and marketing campaigns via Walmart Connect
             </p>
           </div>
           <div className="bg-[#4DBDF5] rounded-lg p-4 md:p-10 block md:flex items-center gap-20 space-x-6 mx-auto mt-10 text-center hover:scale-105 duration-500 transition-transform">
@@ -245,8 +244,8 @@ function page() {
 
             {/* Text */}
             <p className="text-[#0053e2] text-xl font-regular">
-              Insights on U.S. customers, global supply chain best practices
-              and business strategies
+              Insights on U.S. customers, global supply chain best practices and
+              business strategies
             </p>
           </div>
         </div>
@@ -261,19 +260,20 @@ function page() {
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r w-full md:w-[65%] lg:w-[50%] from-black/80 from-40% opacity-60" />
-          <div className="absolute inset-0 flex items-top md:items-center top-[10%] md:top-0 left-[20px] md:left-[50px]">
-            <div className="text-white max-w-full md:max-w-lg lg:max-w-[50%]">
-              <div>
-                <h2 className="text-2xl md:text-4xl font-bold mb-6 leading-normal">
-                  Complete Walmart Vriddhi learning modules to be eligible to
-                  sell on Walmart Marketplace
-                </h2>
-                <SecondaryButton
-                  href="https://seller.walmart.com/signup?q=&origin=marketing_campaign&src=TestIndiaCampaign_Vriddhi&exp=MjAyNS0wMy0xNA=="
-                  target="_blank"
-                  text="Register to sell on Walmart Marketplace"
-                />
-              </div>
+
+          {/* Updated content container */}
+          <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start md:justify-center top-0 md:top-0 left-0 md:left-[50px] px-4">
+            <div className="text-white max-w-full md:max-w-lg lg:max-w-[50%] text-center md:text-left">
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 leading-normal">
+                Complete Walmart Vriddhi learning modules to be eligible to sell
+                on Walmart Marketplace
+              </h2>
+              <SecondaryButton
+                href="https://seller.walmart.com/signup?q=&origin=marketing_campaign&src=TestIndiaCampaign_Vriddhi&exp=MjAyNS0wMy0xNA=="
+                target="_blank"
+                text="Register to sell on Walmart Marketplace"
+                className="sm:text-[10px] md:text-[14px]"
+              />
             </div>
           </div>
         </div>
