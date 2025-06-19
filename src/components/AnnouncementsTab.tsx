@@ -7,7 +7,7 @@ import AnnouncementsCard from "./AnnouncementsCard";
 import { SecondaryButton } from "./buttons";
 import { LatestAnnouncement } from "./LatestAnnouncement";
 
-const pageSize = 3;
+const pageSize = 4;
 
 function AnnouncementsTab() {
   // Fetch the latest announcement

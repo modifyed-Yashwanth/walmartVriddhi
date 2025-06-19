@@ -133,6 +133,7 @@ const NewsroomAnnouncement = () => {
           </div>
 
           {/* Featured Image */}
+          {data?.acf["inside_banner"] &&
           <div className="w-full flex justify-center">
             <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] md:aspect-[24/9] rounded-xl overflow-hidden">
               <Image
@@ -144,6 +145,7 @@ const NewsroomAnnouncement = () => {
               />
             </div>
           </div>
+      }
 
           {/* Content */}
           <style>{`
