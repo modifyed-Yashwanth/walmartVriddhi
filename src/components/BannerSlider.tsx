@@ -91,19 +91,17 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
           >
             <div className="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center">
               {/* No overlays for mobile view */}
-              <h2 className="text-sm font-semibold mb-2 text-gray-900 text-center">
+              {/* <h2 className="text-sm font-semibold mb-2 text-gray-900 text-center">
                 {slides[currentSlide].title}
               </h2>
               <p className="text-sm mb-4 text-gray-700 text-center">
                 {slides[currentSlide].description}
-              </p>
-              {slides[currentSlide].overlay && (
-                <PrimaryButton
-                  href={slides[currentSlide].slide_link}
-                  text="Register for Walmart Vriddhi MSME Summit 2025"
-                  className="text-white"
-                />
-              )}
+              </p> */}
+              <PrimaryButton
+                href={slides[currentSlide].slide_link}
+                text="Register for Walmart Vriddhi MSME Summit 2025"
+                variant="primary"
+              />
             </div>
           </div>
         </div>

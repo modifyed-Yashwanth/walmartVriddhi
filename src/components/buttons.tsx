@@ -42,7 +42,12 @@ export const PrimaryButton = ({
 
   if (href) {
     return (
-      <Link href={href} className={baseClasses} onClick={onClick}>
+      <Link
+        href={href}
+        className={baseClasses}
+        onClick={onClick}
+        target="_blank"
+      >
         {text}
       </Link>
     );

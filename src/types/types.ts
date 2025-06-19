@@ -103,3 +103,9 @@ export interface SearchItemProps {
   title: { rendered: string };
   link: string;
 }
+
+export interface LatestAnnouncementProps {
+  latestLoading: boolean;
+  latestError: boolean;
+  latestData: Array<StoryData> | undefined;
+}
