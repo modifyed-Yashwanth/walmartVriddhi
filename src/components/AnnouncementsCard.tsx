@@ -43,7 +43,7 @@ function AnnouncementsCard({
           <div className="mt-3 sm:mt-0">
             <SecondaryButton
               href={`/newsroom/${slug}`}
-              text="Read more"
+              text="Read More"
               variant="secondary"
             />
           </div>

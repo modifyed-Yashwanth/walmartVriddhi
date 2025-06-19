@@ -27,7 +27,7 @@ export const LatestAnnouncement = ({
 
   return (
     <>
-      <h1 className="text-2xl md:text-4xl font-[300] mb-8">
+      <h1 className="text-2xl md:text-4xl font-[300] mb-8 mt-5 md:mt-0">
         Latest Announcement
       </h1>
       <div className="w-full mb-8 bg-[#F5F6FA] rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-stretch gap-8">
@@ -49,17 +49,17 @@ export const LatestAnnouncement = ({
         </div> */}
         {/* Content */}
         <div className="flex flex-col justify-between flex-1 gap-6">
-          <h2 className="text-xl md:text-2xl font-normal">
+          <h2 className="text-lg md:text-2xl font-normal">
             {story?.title?.rendered}
           </h2>
           <p
-            className="text-gray-700 text-[18px] mb-6"
+            className="text-[14px] md:text-[16px] mb-4"
             dangerouslySetInnerHTML={{ __html: story?.excerpt?.rendered || "" }}
           />
           <div className="flex flex-col gap-6">
             <SecondaryButton
               href={`/newsroom/${story.slug}`}
-              className="max-w-fit px-[30px] py-[15px]"
+              className="max-w-fit"
               text="Read More"
               variant="secondary"
             />

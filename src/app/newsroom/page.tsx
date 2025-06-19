@@ -59,7 +59,7 @@ export default function Page() {
 
       {/* Tabs + Content */}
       <AnimatedSection>
-        <div className="flex flex-col items-center my-6 sm:my-10 md:my-10 mx-4 sm:mx-8 md:mx-12 lg:mx-[100px] space-y-6 sm:space-y-10 md:space-y-14">
+        <div className="flex flex-col items-center my-6 sm:my-10 md:my-10 mx-2 sm:mx-8 md:mx-12 lg:mx-[100px] space-y-6 sm:space-y-10 md:space-y-14">
           {/* Tabs */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-6 md:gap-x-8 items-center justify-center w-full">
             <SecondaryButton
