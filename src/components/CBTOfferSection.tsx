@@ -168,7 +168,7 @@ const CoursesSection = () => {
                 style={{ background: "transparent" }}
                 className="relative overflow-visible p-[20px] mb-6"
               >
-                <div className="relative w-[90%] mx-2 flex justify-center items-center">
+                <div className="relative w-full md:w-[80%] mx-auto flex justify-center items-center">
                   <Image
                     src="/images/CBT-icon-min.png"
                     alt="CBT-icon"
@@ -176,7 +176,7 @@ const CoursesSection = () => {
                     height={120}
                     className="w-full"
                   />
-                  <p className="absolute inset-0 flex justify-center items-center mx-auto text-center text-[12px] sm:text-[13px] lg:text-[16px] px-2 w-[80%]">
+                  <p className="absolute inset-0 flex justify-center items-center mx-auto text-center text-[12px] sm:text-[13px] lg:text-[14px] px-2 w-[80%]">
                     {course.title}
                   </p>
 
@@ -195,7 +195,7 @@ const CoursesSection = () => {
           <style jsx global>{`
             .swiper-pagination {
               position: absolute !important;
-              bottom: -24px !important; /* Push bullets outside the slide visually */
+              bottom: 0px !important; /* Push bullets outside the slide visually */
               left: 50% !important;
               transform: translateX(-50%);
               display: flex !important;

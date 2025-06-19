@@ -87,11 +87,11 @@ function Summit2025() {
               </p>
               <ul>
                 <li className="list-none">
-                  <strong>Flipkart Interactive Kiosk:</strong> On-ground support
+                  <strong>Flipkart Interactive Kiosk -</strong> On-ground support
                   to help MSMEs onboard and grow as digital sellers
                 </li>
                 <li className="list-none">
-                  <strong>Walmart Vriddhi Seller Stories Film:</strong> A
+                  <strong>Walmart Vriddhi Seller Stories Film -</strong> A
                   tribute to the inspiring journeys of small businesses from
                   across the country
                 </li>
