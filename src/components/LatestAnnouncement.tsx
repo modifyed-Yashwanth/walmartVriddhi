@@ -1,5 +1,5 @@
 import { LatestAnnouncementProps } from "@/types/types";
-// import Image from "next/image";
+import Image from "next/image";
 import { SecondaryButton } from "./buttons";
 
 // Latest announcement card layout
@@ -17,7 +17,7 @@ export const LatestAnnouncement = ({
   if (latestError || !latestData?.[0]) return null;
 
   const story = latestData[0];
-  //   const image = story?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+    const image = story?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
 
   const date = new Date(story?.date as string).toLocaleDateString("en-US", {
     year: "numeric",
@@ -32,8 +32,8 @@ export const LatestAnnouncement = ({
       </h1>
       <div className="w-full mb-8 bg-[#F5F6FA] rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-stretch gap-8">
         {/* Image or Placeholder */}
-        {/* <div className="flex-shrink-0 w-full md:w-[480px] h-[260px] md:h-[280px] bg-[#D9D9D9] rounded-xl flex items-center justify-center overflow-hidden mb-6 md:mb-0">
-          {image ? (
+        {image && (
+        <div className="flex-shrink-0 w-full md:w-[480px] h-[260px] md:h-[280px] bg-[#D9D9D9] rounded-xl flex items-center justify-center overflow-hidden mb-6 md:mb-0">
             <Image
               src={image}
               alt={story?.title?.rendered || "Announcement"}
@@ -41,12 +41,8 @@ export const LatestAnnouncement = ({
               width={480}
               height={280}
             />
-          ) : (
-            <span className="text-2xl font-semibold text-[#6B7280]">
-              IMAGE PLACEHOLDER
-            </span>
-          )}
-        </div> */}
+        </div>
+        )}
         {/* Content */}
         <div className="flex flex-col justify-between flex-1 gap-6">
           <h2 className="text-lg md:text-2xl font-normal">
