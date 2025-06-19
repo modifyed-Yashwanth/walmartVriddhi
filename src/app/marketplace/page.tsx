@@ -255,7 +255,7 @@ function page() {
           <Image
             src="/images/marketplace/bottom-banner.jpg"
             alt="Walmart Hero"
-            className="object-cover object-right rounded-xl"
+            className="object-cover object-center rounded-xl"
             fill
             priority
           />
@@ -272,7 +272,7 @@ function page() {
                 href="https://seller.walmart.com/signup?q=&origin=marketing_campaign&src=TestIndiaCampaign_Vriddhi&exp=MjAyNS0wMy0xNA=="
                 target="_blank"
                 text="Register to sell on Walmart Marketplace"
-                className="sm:text-[10px] md:text-[14px]"
+                className="sm:text-[10px] md:text-[14px] inline-block"
               />
             </div>
           </div>
