@@ -1,27 +1,21 @@
 export const slides = [
-  // {
-  //   id: 1,
-  //   image: "/images/Homepage Banner 1 (v).jpg",
-  //   title: "Grow with Walmart Vriddhi",
-  //   description: "",
-  //   slide_link: "https://supplieracademy.northpass.com/",
-  //   overlay: true,
-  // },
-  // {
-  //   id: 2,
-  //   image: "/images/Homepage-banner-2wv.png",
-  //   title: "Helping MSMEs Leverage Digital Capabilities to Unlock Growth",
-  //   description: "",
-  //   slide_link: "https://supplieracademy.northpass.com/",
-  //   overlay: true,
-  // },
   {
-    id: 3,
-    image: "/images/msme-mobile.png",
-    title: "Register for Walmart Vriddhi MSME Summit 2025",
+    id: 1,
+    image: "/images/home-images/Grow with Walmart-Vriddhi.jpg",
+    title: "Grow with Walmart Vriddhi",
     description: "",
-    slide_link: "https://taffexperience.com/msme-summit-2025/",
-    overlay: false,
+    slide_link: "https://supplieracademy.northpass.com/",
+    button_text: "Register for Walmart Vriddhi",
+    overlay: true,
+  },
+  {
+    id: 2,
+    image: "/images/home-images/Helping MSMEs Leverage Digital Capabilities Unlock Growth.jpg",
+    title: "Helping MSMEs Leverage Digital Capabilities to Unlock Growth",
+    description: "",
+    slide_link: "https://supplieracademy.northpass.com/",
+    button_text: "Register for Walmart Vriddhi",
+    overlay: true,
   },
 ];
 
