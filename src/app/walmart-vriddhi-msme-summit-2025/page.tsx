@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { SecondaryButton } from "@/components/buttons";
-import Link from "next/link";
+// import { SecondaryButton } from "@/components/buttons";
+// import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 import { usePathname } from "next/navigation";
 // import { Card } from "@/components/ui/card";
@@ -32,10 +32,10 @@ function Summit2025() {
         `}</style>
         <AnimatedSection key={pathname}>
           <div className="relative w-full rounded-lg overflow-hidden msme-2025">
-            <Link
+            {/* <Link
               href="https://taffexperience.com/msme-summit-2025/"
               target="_blank"
-            >
+            > */}
               <Image
                 src="/images/MSME-2025-Save-The-Date-16-05-2025.jpg"
                 alt="MSME 2025 banner"
@@ -43,8 +43,8 @@ function Summit2025() {
                 height={625}
                 width={1200}
               />
-            </Link>
-            <div className="space-y-2 py-10 max-w-[620px] mx-auto">
+            {/* </Link> */}
+            <div className="space-y-2 pt-10 max-w-[620px] mx-auto">
               <h1 className="my-4 font-medium text-xl">
                 Walmart Vriddhi MSME Summit 2025
               </h1>
@@ -96,16 +96,16 @@ function Summit2025() {
                   across the country
                 </li>
               </ul>
-              <p className="text-xl pt-2">
+              {/* <p className="text-xl pt-2">
                 <strong>Register Now</strong>
               </p>
               <p>
                 Be part of this dynamic platform to learn, connect, and
                 celebrate MSMEs.
-              </p>
+              </p> */}
             </div>
           </div>
-          <p className="text-center">
+          {/* <p className="text-center">
             <SecondaryButton
               text="Register for Walmart Vriddhi MSME Summit 2025"
               className={`bg-[#0053e2] text-white border-[#0053e2]`}
@@ -116,7 +116,7 @@ function Summit2025() {
                 );
               }}
             />
-          </p>
+          </p> */}
         </AnimatedSection>
       </div>
 

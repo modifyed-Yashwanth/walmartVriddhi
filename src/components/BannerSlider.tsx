@@ -2,9 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { BannerButton, PrimaryButton } from "./buttons";
+import { PrimaryButton } from "./buttons";
 import { BannerSliderProps } from "@/types/types";
-import Link from "next/link";
 import AnimatedSection from "./AnimatedSection";
 
 export default function BannerSlider({ slides }: BannerSliderProps) {
@@ -13,7 +12,7 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 10000);
+    }, 12000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
@@ -30,41 +29,25 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                 index === currentSlide ? "opacity-100" : "opacity-0"
               }`}
             >
-              <Link
-                href={slide.slide_link}
-                target="_blank"
+              <div
                 className="absolute inset-0 rounded-lg overflow-hidden z-10"
               >
                 <Image
                   src={slide.image}
-                  alt={`Slide ${index + 1}`}
+                  alt={`Slide ${slide.title}`}
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   priority={index === 0}
                   placeholder="blur"
                   blurDataURL={slide.image}
-                  quality={70}
                 />
                 {/* Overlay gradient for desktop, except for 3rd slide and never on mobile */}
-                {slide.overlay && index !== 2 && (
-                  <div className="hidden md:block absolute inset-0 bg-gradient-to-r w-[50%] from-black/50 from-40% opacity-60 pointer-events-none" />
+                {slide.overlay && (
+                  <div className="hidden md:block absolute inset-0 bg-gradient-to-r w-[50%] from-black/80 from-40% opacity-60 pointer-events-none" />
                 )}
-              </Link>
+              </div>
 
               {/* Desktop Content */}
-              {index === 0 ? (
-                <div className="absolute inset-0 px-4 md:px-8 hidden md:flex flex-col justify-center items-center h-full w-full pb-8 pr-8 top-[35%] left-[15%] z-20">
-                  {/* {slide.overlay && ( */}
-                  <BannerButton
-                    href={slide.slide_link}
-                    target="_blank"
-                    text="Register for Walmart Vriddhi MSME Summit 2025"
-                    variant="secondary"
-                  />
-
-                  {/* )} */}
-                </div>
-              ) : (
                 <div className="absolute inset-0 px-4 md:px-8 hidden md:flex items-center justify-start h-full z-20">
                   <div className="text-white max-w-xl flex flex-col justify-center items-start">
                     <h1 className="text-[36px] font-bold mb-2 whitespace-normal">
@@ -76,30 +59,29 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                     {slide.overlay && (
                       <PrimaryButton
                         href={slide.slide_link}
-                        text="Register for Walmart Vriddhi MSME Summit 2025"
+                        text={slide.button_text}
                       />
                     )}
                   </div>
                 </div>
-              )}
             </div>
           ))}
           {/* Mobile Content: absolutely positioned below the image, not overlayed */}
           <div
-            className="md:hidden absolute left-4 right-4 z-30 rounded-lg h-[200px]"
+            className="md:hidden absolute left-4 right-4 z-30 rounded-lg h-[190px]"
             style={{ bottom: "-200px" }}
           >
             <div className="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center">
               {/* No overlays for mobile view */}
-              {/* <h2 className="text-sm font-semibold mb-2 text-gray-900 text-center">
+              <h2 className="text-sm font-semibold mb-2 text-gray-900 text-center">
                 {slides[currentSlide].title}
               </h2>
               <p className="text-sm mb-4 text-gray-700 text-center">
                 {slides[currentSlide].description}
-              </p> */}
+              </p>
               <PrimaryButton
                 href={slides[currentSlide].slide_link}
-                text="Register for Walmart Vriddhi MSME Summit 2025"
+                text={slides[currentSlide].button_text}
                 variant="primary"
               />
             </div>
@@ -107,7 +89,7 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
         </div>
 
         {/* Slider Indicators */}
-        {/* <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
           {slides.map((_, index) => (
             <button
               key={index}
@@ -118,7 +100,7 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </AnimatedSection>
   );

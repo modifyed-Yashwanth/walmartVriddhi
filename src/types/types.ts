@@ -23,6 +23,7 @@ export interface SlidesDataProps {
   title: string;
   description: string;
   slide_link: string;
+  button_text: string;
   overlay: boolean;
 }
 
