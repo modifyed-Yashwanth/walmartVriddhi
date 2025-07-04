@@ -1,6 +1,6 @@
+// src/app/layout.tsx
 import localFont from "next/font/local";
-import "./globals.css";
-import { Providers } from "./providers/providers";
+import { ReactNode } from "react";
 
 // Load the font
 const everydaySans = localFont({
@@ -30,22 +30,11 @@ const everydaySans = localFont({
   display: "swap",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
+  // Set default lang to 'en'. Locale will be set by [locale] segment for locale-prefixed routes.
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        />
-      </head>
-      <body className={`${everydaySans.className} bg-white`}>
-        <Providers>{children}</Providers>
-      </body>
+      <body className={`${everydaySans.className} bg-white`}>{children}</body>
     </html>
   );
 }

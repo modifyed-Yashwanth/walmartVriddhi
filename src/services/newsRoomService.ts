@@ -10,7 +10,6 @@ export const fetchNewsRoomAnnouncements = async (pageSize = 3, page = 1) => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-
     const announcements = await response.json();
     return announcements;
   } catch (error) {

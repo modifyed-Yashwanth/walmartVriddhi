@@ -5,21 +5,25 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useTranslation } from "next-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar({ sticky = true }: { sticky?: boolean }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState<string | null>(null);
   const router = useRouter();
   const pathname = usePathname();
+  const { t, i18n } = useTranslation();
+  const locale = i18n.language || "en";
 
   const menuItems = [
-    ["About Us", "/about-us"],
-    ["MSME Growth Journey", "/msme-growth-journey"],
-    ["Walmart Marketplace", "/marketplace"],
-    ["Resources", "/resource-hub"],
-    ["Newsroom", "/newsroom"],
-    ["Success Stories", "/success-stories"],
-    ["FAQs", "/faqs"],
+    [t("navbar.aboutUs"), "/about-us"],
+    [t("navbar.msmeGrowthJourney"), "/msme-growth-journey"],
+    [t("navbar.walmartMarketplace"), "/marketplace"],
+    [t("navbar.resources"), "/resource-hub"],
+    [t("navbar.newsroom"), "/newsroom"],
+    [t("navbar.successStories"), "/success-stories"],
+    [t("navbar.faqs"), "/faqs"],
   ];
 
   return (
@@ -83,14 +87,14 @@ export default function Navbar({ sticky = true }: { sticky?: boolean }) {
                 return (
                   <li key={label}>
                     <Link
-                      href={href}
-                      className={`text-[14px] font-light transition-all pb-1 hover:text-gray-200 hover:border-b-4 hover:rounded-b-[4px] text-nowrap ${
+                      href={`/${locale}${href}`}
+                      className={`capitalize text-[14px] font-light transition-all pb-1 hover:text-gray-200 hover:border-b-4 hover:rounded-b-[4px] text-nowrap ${
                         isActive
                           ? "border-b-4 rounded-b-[4px] text-gray-200"
                           : ""
                       }`}
                     >
-                      {label}
+                      {href.substring(1).split("-").join(" ")}
                     </Link>
                   </li>
                 );
@@ -115,6 +119,7 @@ export default function Navbar({ sticky = true }: { sticky?: boolean }) {
               />
               <i className="fas fa-search absolute left-2 top-1/2 -translate-y-1/2 text-black/70" />
             </form>
+            <LanguageSwitcher />
           </div>
         </nav>
 
@@ -133,7 +138,7 @@ export default function Navbar({ sticky = true }: { sticky?: boolean }) {
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link
-                    href={href}
+                    href={`/${locale}${href}`}
                     className="hover:text-gray-200 text-[14px] font-light block py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
