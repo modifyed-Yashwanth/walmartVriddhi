@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./providers/providers";
+import ScrollToTop from "@/components/misc/scrollToTop";
+
 
 // Load the font
 const everydaySans = localFont({
@@ -44,6 +46,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${everydaySans.className} bg-white`}>
+        <ScrollToTop />
         <Providers>{children}</Providers>
       </body>
     </html>
