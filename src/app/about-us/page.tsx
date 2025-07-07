@@ -41,7 +41,7 @@ function Page() {
                   Walmart Vriddhi is a supplier development program launched in
                   2019 with a commitment to empower 50,000 MSMEs in India over
                   five years. In its first phase, the program surpassed that
-                  goal by training over 60,000 MSMEs and has played a catalytic
+                  goal by training over 70,000 MSMEs and has played a catalytic
                   role in supporting small businesses with growth opportunities
                   to reach new national and international markets.
 
