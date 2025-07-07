@@ -6,7 +6,7 @@ export const fetchSearchQuery = async (
 ) => {
   try {
     // Build the URL dynamically
-    let url = `https://docs.walmartvriddhi.org/wp-json/wp/v2/posts?per_page=${pageSize}&page=${page}`;
+    let url = `https://docs.walmartvriddhi.org/wp-json/wp/v2/posts?per_page=${pageSize}&page=${page}&_embed=true`;
 
     if (searchQuery) {
       url += `&search=${searchQuery}`;
